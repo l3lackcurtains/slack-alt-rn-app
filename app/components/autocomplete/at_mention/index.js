@@ -4,10 +4,10 @@
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 
-import {isMinimumServerVersion} from 'mattermost-redux/utils/helpers';
-import {autocompleteUsers} from 'mattermost-redux/actions/users';
-import {getCurrentChannelId, getDefaultChannel} from 'mattermost-redux/selectors/entities/channels';
-import {getCurrentTeamId} from 'mattermost-redux/selectors/entities/teams';
+import {isMinimumServerVersion} from 'app/redux/utils/helpers';
+import {autocompleteUsers} from 'app/redux/actions/users';
+import {getCurrentChannelId, getDefaultChannel} from 'app/redux/selectors/entities/channels';
+import {getCurrentTeamId} from 'app/redux/selectors/entities/teams';
 import {isLandscape} from 'app/selectors/device';
 
 import {
@@ -16,10 +16,10 @@ import {
     filterMembersInCurrentTeam,
     getMatchTermForAtMention,
 } from 'app/selectors/autocomplete';
-import {getTheme} from 'mattermost-redux/selectors/entities/preferences';
+import {getTheme} from 'app/redux/selectors/entities/preferences';
 
-import {haveIChannelPermission} from 'mattermost-redux/selectors/entities/roles';
-import {Permissions} from 'mattermost-redux/constants';
+import {haveIChannelPermission} from 'app/redux/selectors/entities/roles';
+import {Permissions} from 'app/redux/constants';
 
 import AtMention from './at_mention';
 

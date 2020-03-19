@@ -3,11 +3,11 @@
 
 import {connect} from 'react-redux';
 
-import {getCustomEmojisByName} from 'mattermost-redux/selectors/entities/emojis';
-import {getCurrentUserId} from 'mattermost-redux/selectors/entities/users';
-import {getConfig} from 'mattermost-redux/selectors/entities/general';
-import {Client4} from 'mattermost-redux/client';
-import {isMinimumServerVersion} from 'mattermost-redux/utils/helpers';
+import {getCustomEmojisByName} from 'app/redux/selectors/entities/emojis';
+import {getCurrentUserId} from 'app/redux/selectors/entities/users';
+import {getConfig} from 'app/redux/selectors/entities/general';
+import {Client4} from 'app/redux/client';
+import {isMinimumServerVersion} from 'app/redux/utils/helpers';
 
 import {BuiltInEmojis, EmojiIndicesByAlias, Emojis} from 'app/utils/emojis';
 

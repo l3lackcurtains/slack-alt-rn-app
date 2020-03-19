@@ -4,17 +4,17 @@
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 
-import {Preferences} from 'mattermost-redux/constants';
+import {Preferences} from 'app/redux/constants';
 
-import {savePreferences} from 'mattermost-redux/actions/preferences';
-import {updateMe} from 'mattermost-redux/actions/users';
+import {savePreferences} from 'app/redux/actions/preferences';
+import {updateMe} from 'app/redux/actions/users';
 
-import {getCurrentUser} from 'mattermost-redux/selectors/entities/users';
-import {getConfig} from 'mattermost-redux/selectors/entities/general';
+import {getCurrentUser} from 'app/redux/selectors/entities/users';
+import {getConfig} from 'app/redux/selectors/entities/general';
 import {
     get as getPreference,
     getTheme,
-} from 'mattermost-redux/selectors/entities/preferences';
+} from 'app/redux/selectors/entities/preferences';
 
 import {isLandscape} from 'app/selectors/device';
 import {getNotificationProps} from 'app/utils/notify_props';

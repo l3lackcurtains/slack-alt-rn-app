@@ -4,9 +4,9 @@
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 
-import {searchChannels, autocompleteChannelsForSearch} from 'mattermost-redux/actions/channels';
-import {getMyChannelMemberships} from 'mattermost-redux/selectors/entities/channels';
-import {getCurrentTeamId} from 'mattermost-redux/selectors/entities/teams';
+import {searchChannels, autocompleteChannelsForSearch} from 'app/redux/actions/channels';
+import {getMyChannelMemberships} from 'app/redux/selectors/entities/channels';
+import {getCurrentTeamId} from 'app/redux/selectors/entities/teams';
 import {isLandscape} from 'app/selectors/device';
 
 import {
@@ -17,7 +17,7 @@ import {
     filterDirectAndGroupMessages,
     getMatchTermForChannelMention,
 } from 'app/selectors/autocomplete';
-import {getTheme} from 'mattermost-redux/selectors/entities/preferences';
+import {getTheme} from 'app/redux/selectors/entities/preferences';
 
 import ChannelMention from './channel_mention';
 

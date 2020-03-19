@@ -4,11 +4,11 @@
 import {connect} from 'react-redux';
 import {createSelector} from 'reselect';
 
-import {General} from 'mattermost-redux/constants';
-import {makeGetChannel} from 'mattermost-redux/selectors/entities/channels';
-import {getCurrentUserId, getUser, makeGetProfilesInChannel} from 'mattermost-redux/selectors/entities/users';
+import {General} from 'app/redux/constants';
+import {makeGetChannel} from 'app/redux/selectors/entities/channels';
+import {getCurrentUserId, getUser, makeGetProfilesInChannel} from 'app/redux/selectors/entities/users';
 
-import {getTheme} from 'mattermost-redux/selectors/entities/preferences';
+import {getTheme} from 'app/redux/selectors/entities/preferences';
 import {isLandscape} from 'app/selectors/device';
 import {getChannelMembersForDm} from 'app/selectors/channel';
 

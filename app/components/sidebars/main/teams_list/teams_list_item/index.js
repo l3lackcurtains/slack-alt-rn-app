@@ -3,8 +3,8 @@
 
 import {connect} from 'react-redux';
 
-import {getTheme} from 'mattermost-redux/selectors/entities/preferences';
-import {getCurrentTeamId, getTeam, makeGetBadgeCountForTeamId} from 'mattermost-redux/selectors/entities/teams';
+import {getTheme} from 'app/redux/selectors/entities/preferences';
+import {getCurrentTeamId, getTeam, makeGetBadgeCountForTeamId} from 'app/redux/selectors/entities/teams';
 
 import {isLandscape} from 'app/selectors/device';
 

@@ -4,7 +4,7 @@
 import configureStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 
-import * as GeneralActions from 'mattermost-redux/actions/general';
+import * as GeneralActions from 'app/redux/actions/general';
 
 import {ViewTypes} from 'app/constants';
 

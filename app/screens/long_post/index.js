@@ -4,10 +4,10 @@
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 
-import {selectPost} from 'mattermost-redux/actions/posts';
-import {makeGetChannel} from 'mattermost-redux/selectors/entities/channels';
-import {getPost} from 'mattermost-redux/selectors/entities/posts';
-import {getTheme} from 'mattermost-redux/selectors/entities/preferences';
+import {selectPost} from 'app/redux/actions/posts';
+import {makeGetChannel} from 'app/redux/selectors/entities/channels';
+import {getPost} from 'app/redux/selectors/entities/posts';
+import {getTheme} from 'app/redux/selectors/entities/preferences';
 
 import {loadThreadIfNecessary} from 'app/actions/views/channel';
 import {isLandscape} from 'app/selectors/device';

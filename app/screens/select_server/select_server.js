@@ -16,7 +16,7 @@ import tracker from 'app/utils/time_tracker';
 import { isValidUrl, stripTrailingSlashes } from 'app/utils/url';
 import LocalConfig from 'assets/config';
 import merge from 'deepmerge';
-import { Client4 } from 'mattermost-redux/client';
+import { Client4 } from 'app/redux/client';
 import PropTypes from 'prop-types';
 import React, { PureComponent } from 'react';
 import { intlShape } from 'react-intl';

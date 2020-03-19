@@ -2,14 +2,14 @@
 // See LICENSE.txt for license information.
 import {makeMapStateToProps} from './index';
 
-import * as channelSelectors from 'mattermost-redux/selectors/entities/channels';
-import * as generalSelectors from 'mattermost-redux/selectors/entities/general';
-import * as userSelectors from 'mattermost-redux/selectors/entities/users';
-import * as commonSelectors from 'mattermost-redux/selectors/entities/common';
-import * as teamSelectors from 'mattermost-redux/selectors/entities/teams';
+import * as channelSelectors from 'app/redux/selectors/entities/channels';
+import * as generalSelectors from 'app/redux/selectors/entities/general';
+import * as userSelectors from 'app/redux/selectors/entities/users';
+import * as commonSelectors from 'app/redux/selectors/entities/common';
+import * as teamSelectors from 'app/redux/selectors/entities/teams';
 import * as deviceSelectors from 'app/selectors/device';
-import * as preferencesSelectors from 'mattermost-redux/selectors/entities/preferences';
-import {isMinimumServerVersion} from 'mattermost-redux/utils/helpers';
+import * as preferencesSelectors from 'app/redux/selectors/entities/preferences';
+import {isMinimumServerVersion} from 'app/redux/utils/helpers';
 
 jest.mock('mattermost-redux/utils/post_utils');
 

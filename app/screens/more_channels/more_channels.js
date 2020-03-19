@@ -8,9 +8,9 @@ import {Platform, View, Text} from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import {Navigation} from 'react-native-navigation';
 
-import {debounce} from 'mattermost-redux/actions/helpers';
-import {General} from 'mattermost-redux/constants';
-import EventEmitter from 'mattermost-redux/utils/event_emitter';
+import {debounce} from 'app/redux/actions/helpers';
+import {General} from 'app/redux/constants';
+import EventEmitter from 'app/redux/utils/event_emitter';
 
 import {paddingHorizontal as padding} from 'app/components/safe_area_view/iphone_x_spacing';
 import BottomSheet from 'app/utils/bottom_sheet';

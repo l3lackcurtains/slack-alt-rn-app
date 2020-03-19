@@ -1,10 +1,10 @@
 // Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
-import {Client4} from 'mattermost-redux/client';
-import {HEADER_X_VERSION_ID} from 'mattermost-redux/client/client4';
-import EventEmitter from 'mattermost-redux/utils/event_emitter';
-import {General} from 'mattermost-redux/constants';
+import {Client4} from 'app/redux/client';
+import {HEADER_X_VERSION_ID} from 'app/redux/client/client4';
+import EventEmitter from 'app/redux/utils/event_emitter';
+import {General} from 'app/redux/constants';
 
 import {
     HEADER_X_CLUSTER_ID,

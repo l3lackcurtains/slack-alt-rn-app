@@ -3,8 +3,8 @@
 
 import {connect} from 'react-redux';
 
-import {getTheme} from 'mattermost-redux/selectors/entities/preferences';
-import {getCurrentUserId, getStatusForUserId} from 'mattermost-redux/selectors/entities/users';
+import {getTheme} from 'app/redux/selectors/entities/preferences';
+import {getCurrentUserId, getStatusForUserId} from 'app/redux/selectors/entities/users';
 import {isLandscape} from 'app/selectors/device';
 import NotificationSettingsAutoResponder from './notification_settings_auto_responder';
 

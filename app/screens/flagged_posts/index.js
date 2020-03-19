@@ -4,9 +4,9 @@
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 
-import {selectFocusedPostId, selectPost} from 'mattermost-redux/actions/posts';
-import {clearSearch, getFlaggedPosts} from 'mattermost-redux/actions/search';
-import {getTheme} from 'mattermost-redux/selectors/entities/preferences';
+import {selectFocusedPostId, selectPost} from 'app/redux/actions/posts';
+import {clearSearch, getFlaggedPosts} from 'app/redux/actions/search';
+import {getTheme} from 'app/redux/selectors/entities/preferences';
 
 import {loadChannelsByTeamName, loadThreadIfNecessary} from 'app/actions/views/channel';
 import {makePreparePostIdsForSearchPosts} from 'app/selectors/post_list';

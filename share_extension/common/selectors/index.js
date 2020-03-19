@@ -3,17 +3,17 @@
 
 import {createSelector} from 'reselect';
 
-import {General} from 'mattermost-redux/constants';
-import {getAllChannels, getChannelsInTeam, getMyChannelMemberships} from 'mattermost-redux/selectors/entities/channels';
-import {getCurrentUser, getUsers} from 'mattermost-redux/selectors/entities/users';
-import {getConfig} from 'mattermost-redux/selectors/entities/general';
-import {getLastPostPerChannel} from 'mattermost-redux/selectors/entities/posts';
+import {General} from 'app/redux/constants';
+import {getAllChannels, getChannelsInTeam, getMyChannelMemberships} from 'app/redux/selectors/entities/channels';
+import {getCurrentUser, getUsers} from 'app/redux/selectors/entities/users';
+import {getConfig} from 'app/redux/selectors/entities/general';
+import {getLastPostPerChannel} from 'app/redux/selectors/entities/posts';
 import {
     getMyPreferences,
     getTeammateNameDisplaySetting,
     getVisibleTeammate,
     getVisibleGroupIds,
-} from 'mattermost-redux/selectors/entities/preferences';
+} from 'app/redux/selectors/entities/preferences';
 
 import {
     completeDirectChannelDisplayName,
@@ -22,8 +22,8 @@ import {
     getUserIdFromChannelName,
     isAutoClosed,
     sortChannelsByDisplayName,
-} from 'mattermost-redux/utils/channel_utils';
-import {createIdsSelector} from 'mattermost-redux/utils/helpers';
+} from 'app/redux/utils/channel_utils';
+import {createIdsSelector} from 'app/redux/utils/helpers';
 
 export const getChannelIdsForExtensionTeam = createIdsSelector(
     (state) => state.views.extension.selectedTeamId,
