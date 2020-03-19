@@ -1,0 +1,424 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChannelLoader should match snapshot 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    Array [
+      Object {
+        "flex": 1,
+        "overflow": "hidden",
+      },
+      undefined,
+      null,
+      Object {
+        "backgroundColor": "#ffffff",
+      },
+    ]
+  }
+>
+  <AnimatedComponent
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#ffffff",
+          "flex": 1,
+          "flexDirection": "row",
+          "marginVertical": 10,
+          "paddingLeft": 12,
+          "paddingRight": 20,
+        },
+        Object {
+          "backgroundColor": "#ffffff",
+        },
+        Object {
+          "opacity": 0.6,
+        },
+      ]
+    }
+  >
+    <ImageContent
+      animate="fade"
+      color="rgba(61,60,64,0.15)"
+      firstLineWidth="80%"
+      hasRadius={true}
+      lineNumber={3}
+      lineSpacing={5}
+      size={32}
+      textSize={14}
+    />
+  </AnimatedComponent>
+  <AnimatedComponent
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#ffffff",
+          "flex": 1,
+          "flexDirection": "row",
+          "marginVertical": 10,
+          "paddingLeft": 12,
+          "paddingRight": 20,
+        },
+        Object {
+          "backgroundColor": "#ffffff",
+        },
+        Object {
+          "opacity": 0.6,
+        },
+      ]
+    }
+  >
+    <ImageContent
+      animate="fade"
+      color="rgba(61,60,64,0.15)"
+      firstLineWidth="80%"
+      hasRadius={true}
+      lineNumber={3}
+      lineSpacing={5}
+      size={32}
+      textSize={14}
+    />
+  </AnimatedComponent>
+  <AnimatedComponent
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#ffffff",
+          "flex": 1,
+          "flexDirection": "row",
+          "marginVertical": 10,
+          "paddingLeft": 12,
+          "paddingRight": 20,
+        },
+        Object {
+          "backgroundColor": "#ffffff",
+        },
+        Object {
+          "opacity": 0.6,
+        },
+      ]
+    }
+  >
+    <ImageContent
+      animate="fade"
+      color="rgba(61,60,64,0.15)"
+      firstLineWidth="80%"
+      hasRadius={true}
+      lineNumber={3}
+      lineSpacing={5}
+      size={32}
+      textSize={14}
+    />
+  </AnimatedComponent>
+  <AnimatedComponent
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#ffffff",
+          "flex": 1,
+          "flexDirection": "row",
+          "marginVertical": 10,
+          "paddingLeft": 12,
+          "paddingRight": 20,
+        },
+        Object {
+          "backgroundColor": "#ffffff",
+        },
+        Object {
+          "opacity": 0.6,
+        },
+      ]
+    }
+  >
+    <ImageContent
+      animate="fade"
+      color="rgba(61,60,64,0.15)"
+      firstLineWidth="80%"
+      hasRadius={true}
+      lineNumber={3}
+      lineSpacing={5}
+      size={32}
+      textSize={14}
+    />
+  </AnimatedComponent>
+  <AnimatedComponent
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#ffffff",
+          "flex": 1,
+          "flexDirection": "row",
+          "marginVertical": 10,
+          "paddingLeft": 12,
+          "paddingRight": 20,
+        },
+        Object {
+          "backgroundColor": "#ffffff",
+        },
+        Object {
+          "opacity": 0.6,
+        },
+      ]
+    }
+  >
+    <ImageContent
+      animate="fade"
+      color="rgba(61,60,64,0.15)"
+      firstLineWidth="80%"
+      hasRadius={true}
+      lineNumber={3}
+      lineSpacing={5}
+      size={32}
+      textSize={14}
+    />
+  </AnimatedComponent>
+  <AnimatedComponent
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#ffffff",
+          "flex": 1,
+          "flexDirection": "row",
+          "marginVertical": 10,
+          "paddingLeft": 12,
+          "paddingRight": 20,
+        },
+        Object {
+          "backgroundColor": "#ffffff",
+        },
+        Object {
+          "opacity": 0.6,
+        },
+      ]
+    }
+  >
+    <ImageContent
+      animate="fade"
+      color="rgba(61,60,64,0.15)"
+      firstLineWidth="80%"
+      hasRadius={true}
+      lineNumber={3}
+      lineSpacing={5}
+      size={32}
+      textSize={14}
+    />
+  </AnimatedComponent>
+  <AnimatedComponent
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#ffffff",
+          "flex": 1,
+          "flexDirection": "row",
+          "marginVertical": 10,
+          "paddingLeft": 12,
+          "paddingRight": 20,
+        },
+        Object {
+          "backgroundColor": "#ffffff",
+        },
+        Object {
+          "opacity": 0.6,
+        },
+      ]
+    }
+  >
+    <ImageContent
+      animate="fade"
+      color="rgba(61,60,64,0.15)"
+      firstLineWidth="80%"
+      hasRadius={true}
+      lineNumber={3}
+      lineSpacing={5}
+      size={32}
+      textSize={14}
+    />
+  </AnimatedComponent>
+  <AnimatedComponent
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#ffffff",
+          "flex": 1,
+          "flexDirection": "row",
+          "marginVertical": 10,
+          "paddingLeft": 12,
+          "paddingRight": 20,
+        },
+        Object {
+          "backgroundColor": "#ffffff",
+        },
+        Object {
+          "opacity": 0.6,
+        },
+      ]
+    }
+  >
+    <ImageContent
+      animate="fade"
+      color="rgba(61,60,64,0.15)"
+      firstLineWidth="80%"
+      hasRadius={true}
+      lineNumber={3}
+      lineSpacing={5}
+      size={32}
+      textSize={14}
+    />
+  </AnimatedComponent>
+  <AnimatedComponent
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#ffffff",
+          "flex": 1,
+          "flexDirection": "row",
+          "marginVertical": 10,
+          "paddingLeft": 12,
+          "paddingRight": 20,
+        },
+        Object {
+          "backgroundColor": "#ffffff",
+        },
+        Object {
+          "opacity": 0.6,
+        },
+      ]
+    }
+  >
+    <ImageContent
+      animate="fade"
+      color="rgba(61,60,64,0.15)"
+      firstLineWidth="80%"
+      hasRadius={true}
+      lineNumber={3}
+      lineSpacing={5}
+      size={32}
+      textSize={14}
+    />
+  </AnimatedComponent>
+  <AnimatedComponent
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#ffffff",
+          "flex": 1,
+          "flexDirection": "row",
+          "marginVertical": 10,
+          "paddingLeft": 12,
+          "paddingRight": 20,
+        },
+        Object {
+          "backgroundColor": "#ffffff",
+        },
+        Object {
+          "opacity": 0.6,
+        },
+      ]
+    }
+  >
+    <ImageContent
+      animate="fade"
+      color="rgba(61,60,64,0.15)"
+      firstLineWidth="80%"
+      hasRadius={true}
+      lineNumber={3}
+      lineSpacing={5}
+      size={32}
+      textSize={14}
+    />
+  </AnimatedComponent>
+  <AnimatedComponent
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#ffffff",
+          "flex": 1,
+          "flexDirection": "row",
+          "marginVertical": 10,
+          "paddingLeft": 12,
+          "paddingRight": 20,
+        },
+        Object {
+          "backgroundColor": "#ffffff",
+        },
+        Object {
+          "opacity": 0.6,
+        },
+      ]
+    }
+  >
+    <ImageContent
+      animate="fade"
+      color="rgba(61,60,64,0.15)"
+      firstLineWidth="80%"
+      hasRadius={true}
+      lineNumber={3}
+      lineSpacing={5}
+      size={32}
+      textSize={14}
+    />
+  </AnimatedComponent>
+  <AnimatedComponent
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#ffffff",
+          "flex": 1,
+          "flexDirection": "row",
+          "marginVertical": 10,
+          "paddingLeft": 12,
+          "paddingRight": 20,
+        },
+        Object {
+          "backgroundColor": "#ffffff",
+        },
+        Object {
+          "opacity": 0.6,
+        },
+      ]
+    }
+  >
+    <ImageContent
+      animate="fade"
+      color="rgba(61,60,64,0.15)"
+      firstLineWidth="80%"
+      hasRadius={true}
+      lineNumber={3}
+      lineSpacing={5}
+      size={32}
+      textSize={14}
+    />
+  </AnimatedComponent>
+  <AnimatedComponent
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#ffffff",
+          "flex": 1,
+          "flexDirection": "row",
+          "marginVertical": 10,
+          "paddingLeft": 12,
+          "paddingRight": 20,
+        },
+        Object {
+          "backgroundColor": "#ffffff",
+        },
+        Object {
+          "opacity": 0.6,
+        },
+      ]
+    }
+  >
+    <ImageContent
+      animate="fade"
+      color="rgba(61,60,64,0.15)"
+      firstLineWidth="80%"
+      hasRadius={true}
+      lineNumber={3}
+      lineSpacing={5}
+      size={32}
+      textSize={14}
+    />
+  </AnimatedComponent>
+</View>
+`;

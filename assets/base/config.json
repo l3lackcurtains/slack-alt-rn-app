@@ -1,0 +1,44 @@
+{
+    "DefaultServerUrl": "http://192.168.0.15",
+    "TestServerUrl": "http://192.168.0.15",
+    "DefaultTheme": "default",
+    "ShowErrorsList": false,
+    "MinServerVersion": "4.0.0",
+    "EELearnURL": "about.crumet.com",
+    "TeamEditionLearnURL": "crumet.com",
+    "AboutTeamURL": "http://www.crumet.com/",
+    "AboutEnterpriseURL": "http://about.crumet.com/",
+    "PlatformNoticeURL": "https://about.crumet.com",
+    "MobileNoticeURL": "https://about.crumet.com",
+    "SegmentApiKey": "",
+
+    "HideEmailLoginExperimental": true,
+    "HideGitLabLoginExperimental": true,
+    "HideLDAPLoginExperimental": true,
+    "HideSAMLLoginExperimental": true,
+    "HideO365LoginExperimental": true,
+
+    "SentryEnabled": false,
+    "SentryDsnIos": "",
+    "SentryDsnAndroid": "",
+    "SentryOptions": {
+        "deactivateStacktraceMerging": true,
+        "autoBreadcrumbs": {
+            "xhr": false,
+            "console": true
+        }
+    },
+
+    "ExperimentalNormalizeMarkdownLinks": false,
+    "AutoSelectServerUrl": false,
+    "EnableMobileClientUpgrade": false,
+    "EnableMobileClientUpgradeUserSetting": false,
+    "EnableForceMobileClientUpgrade": false,
+    "MobileClientUpgradeAndroidApkLink": "https://about.crumet.com",
+    "MobileClientUpgradeIosIpaLink": "https://about.crumet.com",
+    "ShowSentryDebugOptions": false,
+    "CustomRequestHeaders": {},
+    "TelemetryEnabled": false,
+    "TelemetryUrl": "",
+    "TelemetryApiKey": ""
+}

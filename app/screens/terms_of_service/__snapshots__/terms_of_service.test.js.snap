@@ -1,0 +1,470 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TermsOfService should enable/disable navigator buttons on setNavigatorButtons true/false 1`] = `
+<React.Fragment>
+  <Connect(StatusBar) />
+  <ScrollView
+    contentContainerStyle={
+      Object {
+        "paddingBottom": 50,
+      }
+    }
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "flex": 1,
+        "padding": 30,
+      }
+    }
+  >
+    <Connect(Markdown)
+      baseTextStyle={
+        Object {
+          "color": "#3d3c40",
+          "fontSize": 15,
+          "lineHeight": 20,
+        }
+      }
+      blockStyles={
+        Object {
+          "adjacentParagraph": Object {
+            "marginTop": 6,
+          },
+          "horizontalRule": Object {
+            "backgroundColor": "#3d3c40",
+            "height": 0.5,
+            "marginVertical": 10,
+          },
+          "quoteBlockIcon": Object {
+            "color": undefined,
+            "padding": 5,
+          },
+        }
+      }
+      disableAtMentions={true}
+      disableChannelLink={true}
+      disableHashtags={true}
+      textStyles={
+        Object {
+          "code": Object {
+            "alignSelf": "center",
+            "backgroundColor": undefined,
+            "fontFamily": "Menlo",
+          },
+          "codeBlock": Object {
+            "fontFamily": "Menlo",
+          },
+          "del": Object {
+            "textDecorationLine": "line-through",
+          },
+          "emph": Object {
+            "fontStyle": "italic",
+          },
+          "error": Object {
+            "color": "#fd5960",
+          },
+          "heading1": Object {
+            "fontSize": 17,
+            "fontWeight": "700",
+            "lineHeight": 25,
+          },
+          "heading1Text": Object {
+            "paddingBottom": 8,
+          },
+          "heading2": Object {
+            "fontSize": 17,
+            "fontWeight": "700",
+            "lineHeight": 25,
+          },
+          "heading2Text": Object {
+            "paddingBottom": 8,
+          },
+          "heading3": Object {
+            "fontSize": 17,
+            "fontWeight": "700",
+            "lineHeight": 25,
+          },
+          "heading3Text": Object {
+            "paddingBottom": 8,
+          },
+          "heading4": Object {
+            "fontSize": 17,
+            "fontWeight": "700",
+            "lineHeight": 25,
+          },
+          "heading4Text": Object {
+            "paddingBottom": 8,
+          },
+          "heading5": Object {
+            "fontSize": 17,
+            "fontWeight": "700",
+            "lineHeight": 25,
+          },
+          "heading5Text": Object {
+            "paddingBottom": 8,
+          },
+          "heading6": Object {
+            "fontSize": 17,
+            "fontWeight": "700",
+            "lineHeight": 25,
+          },
+          "heading6Text": Object {
+            "paddingBottom": 8,
+          },
+          "link": Object {
+            "color": "#2389d7",
+          },
+          "mention": Object {
+            "color": "#2389d7",
+          },
+          "mention_highlight": Object {
+            "backgroundColor": "#ffe577",
+            "color": "#166de0",
+          },
+          "strong": Object {
+            "fontWeight": "bold",
+          },
+          "table_header_row": Object {
+            "fontWeight": "700",
+          },
+        }
+      }
+      value="Terms Text"
+    />
+  </ScrollView>
+</React.Fragment>
+`;
+
+exports[`TermsOfService should enable/disable navigator buttons on setNavigatorButtons true/false 2`] = `
+<React.Fragment>
+  <Connect(StatusBar) />
+  <ScrollView
+    contentContainerStyle={
+      Object {
+        "paddingBottom": 50,
+      }
+    }
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "flex": 1,
+        "padding": 30,
+      }
+    }
+  >
+    <Connect(Markdown)
+      baseTextStyle={
+        Object {
+          "color": "#3d3c40",
+          "fontSize": 15,
+          "lineHeight": 20,
+        }
+      }
+      blockStyles={
+        Object {
+          "adjacentParagraph": Object {
+            "marginTop": 6,
+          },
+          "horizontalRule": Object {
+            "backgroundColor": "#3d3c40",
+            "height": 0.5,
+            "marginVertical": 10,
+          },
+          "quoteBlockIcon": Object {
+            "color": undefined,
+            "padding": 5,
+          },
+        }
+      }
+      disableAtMentions={true}
+      disableChannelLink={true}
+      disableHashtags={true}
+      textStyles={
+        Object {
+          "code": Object {
+            "alignSelf": "center",
+            "backgroundColor": undefined,
+            "fontFamily": "Menlo",
+          },
+          "codeBlock": Object {
+            "fontFamily": "Menlo",
+          },
+          "del": Object {
+            "textDecorationLine": "line-through",
+          },
+          "emph": Object {
+            "fontStyle": "italic",
+          },
+          "error": Object {
+            "color": "#fd5960",
+          },
+          "heading1": Object {
+            "fontSize": 17,
+            "fontWeight": "700",
+            "lineHeight": 25,
+          },
+          "heading1Text": Object {
+            "paddingBottom": 8,
+          },
+          "heading2": Object {
+            "fontSize": 17,
+            "fontWeight": "700",
+            "lineHeight": 25,
+          },
+          "heading2Text": Object {
+            "paddingBottom": 8,
+          },
+          "heading3": Object {
+            "fontSize": 17,
+            "fontWeight": "700",
+            "lineHeight": 25,
+          },
+          "heading3Text": Object {
+            "paddingBottom": 8,
+          },
+          "heading4": Object {
+            "fontSize": 17,
+            "fontWeight": "700",
+            "lineHeight": 25,
+          },
+          "heading4Text": Object {
+            "paddingBottom": 8,
+          },
+          "heading5": Object {
+            "fontSize": 17,
+            "fontWeight": "700",
+            "lineHeight": 25,
+          },
+          "heading5Text": Object {
+            "paddingBottom": 8,
+          },
+          "heading6": Object {
+            "fontSize": 17,
+            "fontWeight": "700",
+            "lineHeight": 25,
+          },
+          "heading6Text": Object {
+            "paddingBottom": 8,
+          },
+          "link": Object {
+            "color": "#2389d7",
+          },
+          "mention": Object {
+            "color": "#2389d7",
+          },
+          "mention_highlight": Object {
+            "backgroundColor": "#ffe577",
+            "color": "#166de0",
+          },
+          "strong": Object {
+            "fontWeight": "bold",
+          },
+          "table_header_row": Object {
+            "fontWeight": "700",
+          },
+        }
+      }
+      value="Terms Text"
+    />
+  </ScrollView>
+</React.Fragment>
+`;
+
+exports[`TermsOfService should match snapshot 1`] = `
+<Loading
+  color="#3d3c40"
+  size="large"
+  style={Object {}}
+/>
+`;
+
+exports[`TermsOfService should match snapshot for fail of get terms 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <Connect(StatusBar) />
+  <FailedNetworkAction
+    actionDefaultMessage="try again"
+    actionId="mobile.failed_network_action.retry"
+    errorDefaultMessage="Messages will load when you have an internet connection or {tryAgainAction}."
+    errorId="mobile.failed_network_action.shortDescription"
+    onRetry={[Function]}
+    theme={
+      Object {
+        "awayIndicator": "#ffbc42",
+        "buttonBg": "#166de0",
+        "buttonColor": "#ffffff",
+        "centerChannelBg": "#ffffff",
+        "centerChannelColor": "#3d3c40",
+        "codeTheme": "github",
+        "dndIndicator": "#f74343",
+        "errorTextColor": "#fd5960",
+        "linkColor": "#2389d7",
+        "mentionBg": "#ffffff",
+        "mentionBj": "#ffffff",
+        "mentionColor": "#145dbf",
+        "mentionHighlightBg": "#ffe577",
+        "mentionHighlightLink": "#166de0",
+        "newMessageSeparator": "#ff8800",
+        "onlineIndicator": "#06d6a0",
+        "sidebarBg": "#145dbf",
+        "sidebarHeaderBg": "#1153ab",
+        "sidebarHeaderTextColor": "#ffffff",
+        "sidebarText": "#ffffff",
+        "sidebarTextActiveBorder": "#579eff",
+        "sidebarTextActiveColor": "#ffffff",
+        "sidebarTextHoverBg": "#4578bf",
+        "sidebarUnreadText": "#ffffff",
+        "type": "Mattermost",
+      }
+    }
+  />
+</View>
+`;
+
+exports[`TermsOfService should match snapshot for get terms 1`] = `
+<Loading
+  color="#3d3c40"
+  size="large"
+  style={Object {}}
+/>
+`;
+
+exports[`TermsOfService should match snapshot on enableNavigatorLogout 1`] = `
+<React.Fragment>
+  <Connect(StatusBar) />
+  <ScrollView
+    contentContainerStyle={
+      Object {
+        "paddingBottom": 50,
+      }
+    }
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "flex": 1,
+        "padding": 30,
+      }
+    }
+  >
+    <Connect(Markdown)
+      baseTextStyle={
+        Object {
+          "color": "#3d3c40",
+          "fontSize": 15,
+          "lineHeight": 20,
+        }
+      }
+      blockStyles={
+        Object {
+          "adjacentParagraph": Object {
+            "marginTop": 6,
+          },
+          "horizontalRule": Object {
+            "backgroundColor": "#3d3c40",
+            "height": 0.5,
+            "marginVertical": 10,
+          },
+          "quoteBlockIcon": Object {
+            "color": undefined,
+            "padding": 5,
+          },
+        }
+      }
+      disableAtMentions={true}
+      disableChannelLink={true}
+      disableHashtags={true}
+      textStyles={
+        Object {
+          "code": Object {
+            "alignSelf": "center",
+            "backgroundColor": undefined,
+            "fontFamily": "Menlo",
+          },
+          "codeBlock": Object {
+            "fontFamily": "Menlo",
+          },
+          "del": Object {
+            "textDecorationLine": "line-through",
+          },
+          "emph": Object {
+            "fontStyle": "italic",
+          },
+          "error": Object {
+            "color": "#fd5960",
+          },
+          "heading1": Object {
+            "fontSize": 17,
+            "fontWeight": "700",
+            "lineHeight": 25,
+          },
+          "heading1Text": Object {
+            "paddingBottom": 8,
+          },
+          "heading2": Object {
+            "fontSize": 17,
+            "fontWeight": "700",
+            "lineHeight": 25,
+          },
+          "heading2Text": Object {
+            "paddingBottom": 8,
+          },
+          "heading3": Object {
+            "fontSize": 17,
+            "fontWeight": "700",
+            "lineHeight": 25,
+          },
+          "heading3Text": Object {
+            "paddingBottom": 8,
+          },
+          "heading4": Object {
+            "fontSize": 17,
+            "fontWeight": "700",
+            "lineHeight": 25,
+          },
+          "heading4Text": Object {
+            "paddingBottom": 8,
+          },
+          "heading5": Object {
+            "fontSize": 17,
+            "fontWeight": "700",
+            "lineHeight": 25,
+          },
+          "heading5Text": Object {
+            "paddingBottom": 8,
+          },
+          "heading6": Object {
+            "fontSize": 17,
+            "fontWeight": "700",
+            "lineHeight": 25,
+          },
+          "heading6Text": Object {
+            "paddingBottom": 8,
+          },
+          "link": Object {
+            "color": "#2389d7",
+          },
+          "mention": Object {
+            "color": "#2389d7",
+          },
+          "mention_highlight": Object {
+            "backgroundColor": "#ffe577",
+            "color": "#166de0",
+          },
+          "strong": Object {
+            "fontWeight": "bold",
+          },
+          "table_header_row": Object {
+            "fontWeight": "700",
+          },
+        }
+      }
+      value="Terms Text"
+    />
+  </ScrollView>
+</React.Fragment>
+`;
