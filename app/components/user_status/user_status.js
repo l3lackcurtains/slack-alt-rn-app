@@ -4,7 +4,7 @@
 import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 
-import {General} from 'app/redux/constants';
+import {General} from 'mattermost-redux/constants';
 
 import Icon from 'app/components/vector_icon';
 

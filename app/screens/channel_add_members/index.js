@@ -4,12 +4,12 @@
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 
-import {getTeamStats} from 'app/redux/actions/teams';
-import {getProfilesNotInChannel, searchProfiles} from 'app/redux/actions/users';
-import {getCurrentChannel} from 'app/redux/selectors/entities/channels';
-import {getTheme} from 'app/redux/selectors/entities/preferences';
-import {getCurrentTeamId} from 'app/redux/selectors/entities/teams';
-import {getCurrentUserId, getProfilesNotInCurrentChannel} from 'app/redux/selectors/entities/users';
+import {getTeamStats} from 'mattermost-redux/actions/teams';
+import {getProfilesNotInChannel, searchProfiles} from 'mattermost-redux/actions/users';
+import {getCurrentChannel} from 'mattermost-redux/selectors/entities/channels';
+import {getTheme} from 'mattermost-redux/selectors/entities/preferences';
+import {getCurrentTeamId} from 'mattermost-redux/selectors/entities/teams';
+import {getCurrentUserId, getProfilesNotInCurrentChannel} from 'mattermost-redux/selectors/entities/users';
 
 import {handleAddChannelMembers} from 'app/actions/views/channel_add_members';
 import {isLandscape} from 'app/selectors/device';

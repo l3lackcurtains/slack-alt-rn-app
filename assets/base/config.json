@@ -1,6 +1,6 @@
 {
-    "DefaultServerUrl": "http://192.168.0.15",
-    "TestServerUrl": "http://192.168.0.15",
+    "DefaultServerUrl": "http://68.183.94.123/",
+    "TestServerUrl": "http://68.183.94.123/",
     "DefaultTheme": "default",
     "ShowErrorsList": false,
     "MinServerVersion": "4.0.0",

@@ -4,10 +4,10 @@
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
-import {getTheme} from 'app/redux/selectors/entities/preferences';
-import {getCurrentUserId} from 'app/redux/selectors/entities/users';
-import {getCurrentTeamId} from 'app/redux/selectors/entities/teams';
-import {savePreferences} from 'app/redux/actions/preferences';
+import {getTheme} from 'mattermost-redux/selectors/entities/preferences';
+import {getCurrentUserId} from 'mattermost-redux/selectors/entities/users';
+import {getCurrentTeamId} from 'mattermost-redux/selectors/entities/teams';
+import {savePreferences} from 'mattermost-redux/actions/preferences';
 
 import {getAllowedThemes, getCustomTheme} from 'app/selectors/theme';
 import {isLandscape, isTablet} from 'app/selectors/device';

@@ -11,9 +11,9 @@ import {
 } from 'react-native';
 import {intlShape} from 'react-intl';
 
-import {Posts} from 'app/redux/constants';
-import EventEmitter from 'app/redux/utils/event_emitter';
-import {isPostEphemeral, isPostPendingOrFailed, isSystemMessage} from 'app/redux/utils/post_utils';
+import {Posts} from 'mattermost-redux/constants';
+import EventEmitter from 'mattermost-redux/utils/event_emitter';
+import {isPostEphemeral, isPostPendingOrFailed, isSystemMessage} from 'mattermost-redux/utils/post_utils';
 
 import PostBody from 'app/components/post_body';
 import PostHeader from 'app/components/post_header';

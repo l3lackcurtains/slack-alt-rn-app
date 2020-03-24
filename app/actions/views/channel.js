@@ -5,38 +5,38 @@ import {batchActions} from 'redux-batched-actions';
 
 import {ViewTypes} from 'app/constants';
 
-import {UserTypes, ChannelTypes} from 'app/redux/action_types';
+import {UserTypes, ChannelTypes} from 'mattermost-redux/action_types';
 import {
     fetchMyChannelsAndMembers,
     getChannelByNameAndTeamName,
     markChannelAsRead,
     markChannelAsViewed,
     leaveChannel as serviceLeaveChannel,
-} from 'app/redux/actions/channels';
+} from 'mattermost-redux/actions/channels';
 import {
     getPosts,
     getPostsBefore,
     getPostsSince,
     getPostThread,
-} from 'app/redux/actions/posts';
-import {getFilesForPost} from 'app/redux/actions/files';
-import {savePreferences} from 'app/redux/actions/preferences';
-import {loadRolesIfNeeded} from 'app/redux/actions/roles';
-import {getTeamMembersByIds, selectTeam} from 'app/redux/actions/teams';
-import {getProfilesInChannel} from 'app/redux/actions/users';
-import {Client4} from 'app/redux/client';
-import {General, Preferences} from 'app/redux/constants';
-import {getPostIdsInChannel} from 'app/redux/selectors/entities/posts';
+} from 'mattermost-redux/actions/posts';
+import {getFilesForPost} from 'mattermost-redux/actions/files';
+import {savePreferences} from 'mattermost-redux/actions/preferences';
+import {loadRolesIfNeeded} from 'mattermost-redux/actions/roles';
+import {getTeamMembersByIds, selectTeam} from 'mattermost-redux/actions/teams';
+import {getProfilesInChannel} from 'mattermost-redux/actions/users';
+import {Client4} from 'mattermost-redux/client';
+import {General, Preferences} from 'mattermost-redux/constants';
+import {getPostIdsInChannel} from 'mattermost-redux/selectors/entities/posts';
 import {
     getCurrentChannelId,
     getRedirectChannelNameForTeam,
     getChannelsNameMapInTeam,
     isManuallyUnread,
-} from 'app/redux/selectors/entities/channels';
-import {getConfig} from 'app/redux/selectors/entities/general';
-import {getMyPreferences} from 'app/redux/selectors/entities/preferences';
-import {getCurrentUserId, getUserIdsInChannels, getUsers} from 'app/redux/selectors/entities/users';
-import {getTeamByName} from 'app/redux/selectors/entities/teams';
+} from 'mattermost-redux/selectors/entities/channels';
+import {getConfig} from 'mattermost-redux/selectors/entities/general';
+import {getMyPreferences} from 'mattermost-redux/selectors/entities/preferences';
+import {getCurrentUserId, getUserIdsInChannels, getUsers} from 'mattermost-redux/selectors/entities/users';
+import {getTeamByName} from 'mattermost-redux/selectors/entities/teams';
 
 import {
     getChannelByName,
@@ -45,10 +45,10 @@ import {
     isDirectChannel,
     isGroupChannel,
     getChannelByName as getChannelByNameSelector,
-} from 'app/redux/utils/channel_utils';
-import EventEmitter from 'app/redux/utils/event_emitter';
-import {getLastCreateAt} from 'app/redux/utils/post_utils';
-import {getPreferencesByCategory} from 'app/redux/utils/preference_utils';
+} from 'mattermost-redux/utils/channel_utils';
+import EventEmitter from 'mattermost-redux/utils/event_emitter';
+import {getLastCreateAt} from 'mattermost-redux/utils/post_utils';
+import {getPreferencesByCategory} from 'mattermost-redux/utils/preference_utils';
 
 import {INSERT_TO_COMMENT, INSERT_TO_DRAFT} from 'app/constants/post_textbox';
 import {getChannelReachable} from 'app/selectors/channel';

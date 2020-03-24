@@ -10,8 +10,8 @@ import {
     View,
 } from 'react-native';
 
-import {General, WebsocketEvents} from 'app/redux/constants';
-import EventEmitter from 'app/redux/utils/event_emitter';
+import {General, WebsocketEvents} from 'mattermost-redux/constants';
+import EventEmitter from 'mattermost-redux/utils/event_emitter';
 
 import SafeAreaView from 'app/components/safe_area_view';
 import {NavigationTypes} from 'app/constants';

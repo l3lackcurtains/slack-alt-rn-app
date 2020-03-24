@@ -3,7 +3,7 @@
 
 import {createSelector} from 'reselect';
 
-import {getCurrentChannelId, getUnreads} from 'app/redux/selectors/entities/channels';
+import {getCurrentChannelId, getUnreads} from 'mattermost-redux/selectors/entities/channels';
 
 const emptyDraft = {
     draft: '',

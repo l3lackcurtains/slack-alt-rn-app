@@ -5,7 +5,7 @@ import {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import {intlShape} from 'react-intl';
 
-import Preferences from 'app/redux/constants/preferences';
+import Preferences from 'mattermost-redux/constants/preferences';
 
 export default class ClockDisplayBase extends PureComponent {
     static propTypes = {

@@ -174,7 +174,7 @@ build-ios: | stop pre-build check-style i18n-extract-ci ## Builds the iOS app
 	@cd fastlane && BABEL_ENV=production NODE_ENV=production bundle exec fastlane ios build
 	$(call stop_packager)
 
-build-android: | stop pre-build prepare-android-build ## Build the Android app
+build-android: | stop pre-build check-style i18n-extract-ci prepare-android-build ## Build the Android app
 	$(call start_packager)
 	@echo "Building Android app"
 	@cd fastlane && BABEL_ENV=production NODE_ENV=production bundle exec fastlane android build
@@ -203,7 +203,7 @@ unsigned-android: stop pre-build check-style prepare-android-build ## Build an u
 test: | pre-run check-style ## Runs tests
 	@npm test
 
-build-pr: | can-build-pr stop pre-build ## Build a PR from the mattermost-mobile repo
+build-pr: | can-build-pr stop pre-build check-style i18n-extract-ci ## Build a PR from the mattermost-mobile repo
 	$(call start_packager)
 	@echo "Building App from PR ${PR_ID}"
 	@cd fastlane && BABEL_ENV=production NODE_ENV=production bundle exec fastlane build_pr pr:PR-${PR_ID}

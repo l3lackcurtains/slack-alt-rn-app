@@ -4,10 +4,10 @@
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 
-import {getCurrentTeamId} from 'app/redux/selectors/entities/teams';
-import {getTheme} from 'app/redux/selectors/entities/preferences';
-import {getProfiles, searchProfiles} from 'app/redux/actions/users';
-import {getChannels, searchChannels} from 'app/redux/actions/channels';
+import {getCurrentTeamId} from 'mattermost-redux/selectors/entities/teams';
+import {getTheme} from 'mattermost-redux/selectors/entities/preferences';
+import {getProfiles, searchProfiles} from 'mattermost-redux/actions/users';
+import {getChannels, searchChannels} from 'mattermost-redux/actions/channels';
 import {isLandscape} from 'app/selectors/device';
 import SelectorScreen from './selector_screen';
 

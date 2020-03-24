@@ -3,13 +3,13 @@
 
 import {batchActions} from 'redux-batched-actions';
 
-import {ChannelTypes, GeneralTypes, TeamTypes} from 'app/redux/action_types';
-import {Client4} from 'app/redux/client';
-import {General} from 'app/redux/constants';
-import {fetchMyChannelsAndMembers} from 'app/redux/actions/channels';
-import {getClientConfig, getDataRetentionPolicy, getLicenseConfig} from 'app/redux/actions/general';
-import {receivedNewPost} from 'app/redux/actions/posts';
-import {getMyTeams, getMyTeamMembers} from 'app/redux/actions/teams';
+import {ChannelTypes, GeneralTypes, TeamTypes} from 'mattermost-redux/action_types';
+import {Client4} from 'mattermost-redux/client';
+import {General} from 'mattermost-redux/constants';
+import {fetchMyChannelsAndMembers} from 'mattermost-redux/actions/channels';
+import {getClientConfig, getDataRetentionPolicy, getLicenseConfig} from 'mattermost-redux/actions/general';
+import {receivedNewPost} from 'mattermost-redux/actions/posts';
+import {getMyTeams, getMyTeamMembers} from 'mattermost-redux/actions/teams';
 
 import {ViewTypes} from 'app/constants';
 import EphemeralStore from 'app/store/ephemeral_store';

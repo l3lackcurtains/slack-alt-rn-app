@@ -3,7 +3,7 @@
 
 import {combineReducers} from 'redux';
 
-import {General} from 'app/redux/constants';
+import {General} from 'mattermost-redux/constants';
 
 import {ViewTypes} from 'app/constants';
 

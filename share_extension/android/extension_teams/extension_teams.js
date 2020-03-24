@@ -11,7 +11,7 @@ import {
     View,
 } from 'react-native';
 
-import {Preferences} from 'app/redux/constants';
+import {Preferences} from 'mattermost-redux/constants';
 
 import {changeOpacity, makeStyleSheetFromTheme} from 'app/utils/theme';
 

@@ -4,12 +4,12 @@
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
-import {addChannelMember} from 'app/redux/actions/channels';
-import {removePost} from 'app/redux/actions/posts';
+import {addChannelMember} from 'mattermost-redux/actions/channels';
+import {removePost} from 'mattermost-redux/actions/posts';
 
-import {getPost} from 'app/redux/selectors/entities/posts';
-import {getChannel} from 'app/redux/selectors/entities/channels';
-import {getCurrentUser} from 'app/redux/selectors/entities/users';
+import {getPost} from 'mattermost-redux/selectors/entities/posts';
+import {getChannel} from 'mattermost-redux/selectors/entities/channels';
+import {getCurrentUser} from 'mattermost-redux/selectors/entities/users';
 
 import {sendAddToChannelEphemeralPost} from 'app/actions/views/post';
 

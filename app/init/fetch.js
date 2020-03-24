@@ -6,10 +6,10 @@ import DeviceInfo from 'react-native-device-info';
 import RNFetchBlob from 'rn-fetch-blob';
 import urlParse from 'url-parse';
 
-import {Client4} from 'app/redux/client';
-import {ClientError, HEADER_X_VERSION_ID} from 'app/redux/client/client4';
-import EventEmitter from 'app/redux/utils/event_emitter';
-import {General} from 'app/redux/constants';
+import {Client4} from 'mattermost-redux/client';
+import {ClientError, HEADER_X_VERSION_ID} from 'mattermost-redux/client/client4';
+import EventEmitter from 'mattermost-redux/utils/event_emitter';
+import {General} from 'mattermost-redux/constants';
 
 import mattermostBucket from 'app/mattermost_bucket';
 import mattermostManaged from 'app/mattermost_managed';

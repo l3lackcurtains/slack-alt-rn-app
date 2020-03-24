@@ -4,14 +4,14 @@
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
-import {createPost, removePost} from 'app/redux/actions/posts';
-import {Posts} from 'app/redux/constants';
-import {isChannelReadOnlyById} from 'app/redux/selectors/entities/channels';
-import {getPost, makeGetCommentCountForPost, makeIsPostCommentMention} from 'app/redux/selectors/entities/posts';
-import {getUser, getCurrentUserId} from 'app/redux/selectors/entities/users';
-import {getMyPreferences, getTheme} from 'app/redux/selectors/entities/preferences';
-import {isStartOfNewMessages} from 'app/redux/utils/post_list';
-import {isPostFlagged, isSystemMessage} from 'app/redux/utils/post_utils';
+import {createPost, removePost} from 'mattermost-redux/actions/posts';
+import {Posts} from 'mattermost-redux/constants';
+import {isChannelReadOnlyById} from 'mattermost-redux/selectors/entities/channels';
+import {getPost, makeGetCommentCountForPost, makeIsPostCommentMention} from 'mattermost-redux/selectors/entities/posts';
+import {getUser, getCurrentUserId} from 'mattermost-redux/selectors/entities/users';
+import {getMyPreferences, getTheme} from 'mattermost-redux/selectors/entities/preferences';
+import {isStartOfNewMessages} from 'mattermost-redux/utils/post_list';
+import {isPostFlagged, isSystemMessage} from 'mattermost-redux/utils/post_utils';
 
 import {insertToDraft, setPostTooltipVisible} from 'app/actions/views/channel';
 import {isLandscape} from 'app/selectors/device';

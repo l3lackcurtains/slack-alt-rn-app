@@ -15,7 +15,7 @@ import {
     View,
 } from 'react-native';
 
-import {isEmail} from 'app/redux/utils/helpers';
+import {isEmail} from 'mattermost-redux/utils/helpers';
 
 import {GlobalStyles} from 'app/styles';
 

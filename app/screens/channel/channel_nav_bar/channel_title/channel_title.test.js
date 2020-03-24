@@ -3,7 +3,7 @@
 
 import React from 'react';
 import {shallow} from 'enzyme';
-import {General} from 'app/redux/constants';
+import {General} from 'mattermost-redux/constants';
 
 import ChannelTitle from './channel_title';
 

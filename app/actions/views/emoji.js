@@ -1,8 +1,8 @@
 // Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
-import {addReaction as serviceAddReaction} from 'app/redux/actions/posts';
-import {getPostIdsInCurrentChannel, makeGetPostIdsForThread} from 'app/redux/selectors/entities/posts';
+import {addReaction as serviceAddReaction} from 'mattermost-redux/actions/posts';
+import {getPostIdsInCurrentChannel, makeGetPostIdsForThread} from 'mattermost-redux/selectors/entities/posts';
 
 import {ViewTypes} from 'app/constants';
 

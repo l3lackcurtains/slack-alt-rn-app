@@ -9,9 +9,9 @@ import {
     setNativeExceptionHandler,
 } from 'react-native-exception-handler';
 
-import {Client4} from 'app/redux/client';
-import {logError} from 'app/redux/actions/errors';
-import {close as closeWebSocket} from 'app/redux/actions/websocket';
+import {Client4} from 'mattermost-redux/client';
+import {logError} from 'mattermost-redux/actions/errors';
+import {close as closeWebSocket} from 'mattermost-redux/actions/websocket';
 
 import {purgeOfflineStore} from 'app/actions/views/root';
 import {DEFAULT_LOCALE, getTranslations} from 'app/i18n';

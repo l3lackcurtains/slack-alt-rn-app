@@ -4,11 +4,11 @@
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 
-import {selectPost} from 'app/redux/actions/posts';
-import {getPostIdsInCurrentChannel} from 'app/redux/selectors/entities/posts';
-import {getCurrentChannelId} from 'app/redux/selectors/entities/channels';
-import {getCurrentUserId} from 'app/redux/selectors/entities/users';
-import {getTheme} from 'app/redux/selectors/entities/preferences';
+import {selectPost} from 'mattermost-redux/actions/posts';
+import {getPostIdsInCurrentChannel} from 'mattermost-redux/selectors/entities/posts';
+import {getCurrentChannelId} from 'mattermost-redux/selectors/entities/channels';
+import {getCurrentUserId} from 'mattermost-redux/selectors/entities/users';
+import {getTheme} from 'mattermost-redux/selectors/entities/preferences';
 
 import {
     loadPostsIfNecessaryWithRetry,

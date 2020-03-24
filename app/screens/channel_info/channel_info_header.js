@@ -12,7 +12,7 @@ import {
 } from 'react-native';
 import {intlShape} from 'react-intl';
 
-import {General} from 'app/redux/constants';
+import {General} from 'mattermost-redux/constants';
 
 import ChannelIcon from 'app/components/channel_icon';
 import FormattedDate from 'app/components/formatted_date';

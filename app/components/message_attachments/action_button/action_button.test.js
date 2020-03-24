@@ -7,7 +7,7 @@ import ActionButton from './action_button';
 import {changeOpacity} from 'app/utils/theme';
 import {STATUS_COLORS} from 'app/constants/colors';
 
-import Preferences from 'app/redux/constants/preferences';
+import Preferences from 'mattermost-redux/constants/preferences';
 
 describe('ActionButton', () => {
     test('correct styles when from global theme', () => {

@@ -13,9 +13,9 @@ import {
 } from 'react-native';
 import {injectIntl, intlShape} from 'react-intl';
 
-import {General} from 'app/redux/constants';
-import {sortChannelsByDisplayName} from 'app/redux/utils/channel_utils';
-import {displayUsername} from 'app/redux/utils/user_utils';
+import {General} from 'mattermost-redux/constants';
+import {sortChannelsByDisplayName} from 'mattermost-redux/utils/channel_utils';
+import {displayUsername} from 'mattermost-redux/utils/user_utils';
 import {t} from 'app/utils/i18n';
 import ChannelItem from 'app/components/sidebars/main/channels_list/channel_item';
 import {ListTypes} from 'app/constants';

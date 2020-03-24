@@ -4,10 +4,10 @@
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 
-import {getAllChannels, getCurrentChannel, getDefaultChannel} from 'app/redux/selectors/entities/channels';
-import {getCurrentTeamId} from 'app/redux/selectors/entities/teams';
-import {getCurrentUserId} from 'app/redux/selectors/entities/users';
-import {getConfig} from 'app/redux/selectors/entities/general';
+import {getAllChannels, getCurrentChannel, getDefaultChannel} from 'mattermost-redux/selectors/entities/channels';
+import {getCurrentTeamId} from 'mattermost-redux/selectors/entities/teams';
+import {getCurrentUserId} from 'mattermost-redux/selectors/entities/users';
+import {getConfig} from 'mattermost-redux/selectors/entities/general';
 
 import {getTeamChannels} from 'share_extension/android/actions';
 import {getAllowedServerMaxFileSize} from 'app/utils/file';
