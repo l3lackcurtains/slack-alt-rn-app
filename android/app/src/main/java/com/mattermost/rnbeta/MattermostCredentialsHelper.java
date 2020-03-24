@@ -1,4 +1,4 @@
-package com.mattermost.rnbeta;
+package com.bulletin.schools;
 
 import android.content.Context;
 

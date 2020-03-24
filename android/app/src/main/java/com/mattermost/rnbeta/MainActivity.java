@@ -1,4 +1,4 @@
-package com.mattermost.rnbeta;
+package com.bulletin.schools;
 
 import android.os.Bundle;
 import androidx.annotation.Nullable;

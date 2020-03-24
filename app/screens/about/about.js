@@ -1,26 +1,20 @@
 // Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
-import React, {PureComponent} from 'react';
+import AppIcon from 'app/components/app_icon';
+import FormattedText from 'app/components/formatted_text';
+import { paddingHorizontal as padding } from 'app/components/safe_area_view/iphone_x_spacing';
+import StatusBar from 'app/components/status_bar';
+import AboutLinks from 'app/constants/about_links';
+import { changeOpacity, makeStyleSheetFromTheme } from 'app/utils/theme';
+import Config from 'assets/config';
 import PropTypes from 'prop-types';
-import {
-    Linking,
-    ScrollView,
-    Text,
-    TouchableOpacity,
-    View,
-} from 'react-native';
+import React, { PureComponent } from 'react';
+import { Linking, ScrollView, Text, TouchableOpacity, View } from 'react-native';
 import DeviceInfo from 'react-native-device-info';
 
-import FormattedText from 'app/components/formatted_text';
-import StatusBar from 'app/components/status_bar';
-import {changeOpacity, makeStyleSheetFromTheme} from 'app/utils/theme';
-import {paddingHorizontal as padding} from 'app/components/safe_area_view/iphone_x_spacing';
-import AppIcon from 'app/components/app_icon';
-import Config from 'assets/config';
-import AboutLinks from 'app/constants/about_links';
 
-const MATTERMOST_BUNDLE_IDS = ['com.mattermost.rnbeta', 'com.mattermost.rn'];
+const MATTERMOST_BUNDLE_IDS = ['com.bulletin.schools', 'com.mattermost.rn'];
 
 export default class About extends PureComponent {
     static propTypes = {
@@ -55,7 +49,7 @@ export default class About extends PureComponent {
     }
 
     render() {
-        const {theme, config, license, isLandscape} = this.props;
+        const { theme, config, license, isLandscape } = this.props;
         const style = getStyleSheet(theme);
 
         let title = (
@@ -78,7 +72,7 @@ export default class About extends PureComponent {
             <View style={style.learnContainer}>
                 <FormattedText
                     id='about.teamEditionLearn'
-                    defaultMessage='Join the Mattermost community at '
+                    defaultMessage='Join the Bulletin community at '
                     style={style.learn}
                 />
                 <TouchableOpacity
@@ -211,7 +205,7 @@ export default class About extends PureComponent {
 
         return (
             <View style={style.wrapper}>
-                <StatusBar/>
+                <StatusBar />
                 <ScrollView
                     style={[style.scrollView, padding(isLandscape)]}
                     contentContainerStyle={style.scrollViewContent}
@@ -226,7 +220,7 @@ export default class About extends PureComponent {
                     <View style={style.infoContainer}>
                         <View style={style.titleContainer}>
                             <Text style={style.title}>
-                                {`${config.SiteName} `}
+                                {'Bulletin'}
                             </Text>
                             {title}
                         </View>
@@ -254,7 +248,7 @@ export default class About extends PureComponent {
                         {!MATTERMOST_BUNDLE_IDS.includes(DeviceInfo.getBundleId()) &&
                             <FormattedText
                                 id='mobile.about.powered_by'
-                                defaultMessage='{site} is powered by Mattermost'
+                                defaultMessage='{site} is powered by Bulletin'
                                 style={style.footerText}
                                 values={{
                                     site: this.props.config.SiteName,
@@ -263,7 +257,7 @@ export default class About extends PureComponent {
                         }
                         <FormattedText
                             id='mobile.about.copyright'
-                            defaultMessage='Copyright 2015-{currentYear} Mattermost, Inc. All rights reserved'
+                            defaultMessage='Copyright 2015-{currentYear} Bulletin, Inc. All rights reserved'
                             style={[style.footerText, style.copyrightText]}
                             values={{
                                 currentYear: new Date().getFullYear(),
@@ -278,7 +272,7 @@ export default class About extends PureComponent {
                             <View style={style.footerGroup}>
                                 <FormattedText
                                     id='mobile.notice_text'
-                                    defaultMessage='Mattermost is made possible by the open source software used in our {platform} and {mobile}.'
+                                    defaultMessage='Bulletin is made possible by the open source software used in our {platform} and {mobile}.'
                                     style={style.footerText}
                                     values={{
                                         platform: (
@@ -293,7 +287,7 @@ export default class About extends PureComponent {
                                             <FormattedText
                                                 id='mobile.notice_mobile_link'
                                                 defaultMessage='mobile apps'
-                                                style={[style.noticeLink, {marginLeft: 5}]}
+                                                style={[style.noticeLink, { marginLeft: 5 }]}
                                                 onPress={this.handleMobileNotice}
                                             />
                                         ),

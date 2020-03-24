@@ -360,9 +360,7 @@ export default class Login extends PureComponent {
                             source={require('assets/images/logo.png')}
                         />
                         <View>
-                            <Text style={GlobalStyles.header}>
-                                {this.props.config.SiteName}
-                            </Text>
+                            <Text style={GlobalStyles.header}>{'Bulletin'}</Text>
                             <FormattedText
                                 style={GlobalStyles.subheader}
                                 id='web.root.signup_info'

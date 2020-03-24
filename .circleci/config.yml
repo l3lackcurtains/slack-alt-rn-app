@@ -231,7 +231,7 @@ jobs:
       - build-android
       - persist
       - save:
-          filename: "Mattermost_Beta.apk"
+          filename: "Bulletin_Beta.apk"
 
   build-android-release:
     executor: android
@@ -239,7 +239,7 @@ jobs:
       - build-android
       - persist
       - save:
-          filename: "Mattermost.apk"
+          filename: "Bulletin.apk"
 
   build-android-pr:
     executor: android
@@ -248,7 +248,7 @@ jobs:
     steps:
       - build-android
       - save:
-          filename: "Mattermost_Beta.apk"
+          filename: "Bulletin_Beta.apk"
 
   build-android-unsigned:
     executor: android
@@ -267,7 +267,7 @@ jobs:
           command: bundle exec fastlane android unsigned
       - persist
       - save:
-          filename: "Mattermost-unsigned.apk"
+          filename: "Bulletin-unsigned.apk"
 
   build-ios-beta:
     executor: ios
@@ -275,7 +275,7 @@ jobs:
       - build-ios
       - persist
       - save:
-          filename: "Mattermost_Beta.ipa"
+          filename: "Bulletin_Beta.ipa"
 
   build-ios-release:
     executor: ios
@@ -283,7 +283,7 @@ jobs:
       - build-ios
       - persist
       - save:
-          filename: "Mattermost.ipa"
+          filename: "Bulletin.ipa"
 
   build-ios-pr:
     executor: ios
@@ -292,7 +292,7 @@ jobs:
     steps:
       - build-ios
       - save:
-          filename: "Mattermost_Beta.ipa"
+          filename: "Bulletin_Beta.ipa"
 
   build-ios-unsigned:
     executor: ios
@@ -315,9 +315,9 @@ jobs:
       - persist_to_workspace:
           root: ~/
           paths:
-            - mattermost-mobile/Mattermost-unsigned.ipa
+            - mattermost-mobile/Bulletin-unsigned.ipa
       - save:
-          filename: "Mattermost-unsigned.ipa"
+          filename: "Bulletin-unsigned.ipa"
 
   deploy-android-release:
     executor:
@@ -328,7 +328,7 @@ jobs:
       - deploy-to-store:
           task: "Deploy to Google Play"
           target: android
-          file: Mattermost.apk
+          file: Bulletin.apk
 
   deploy-android-beta:
     executor:
@@ -339,7 +339,7 @@ jobs:
       - deploy-to-store:
           task: "Deploy to Google Play"
           target: android
-          file: Mattermost_Beta.apk
+          file: Bulletin_Beta.apk
 
   deploy-ios-release:
     executor: ios
@@ -348,7 +348,7 @@ jobs:
       - deploy-to-store:
           task: "Deploy to TestFlight"
           target: ios
-          file: Mattermost.ipa
+          file: Bulletin.ipa
 
   deploy-ios-beta:
     executor: ios
@@ -357,7 +357,7 @@ jobs:
       - deploy-to-store:
           task: "Deploy to TestFlight"
           target: ios
-          file: Mattermost_Beta.ipa
+          file: Bulletin_Beta.ipa
 
   github-release:
     executor:

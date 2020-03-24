@@ -1,4 +1,4 @@
-package com.mattermost.rnbeta;
+package com.bulletin.schools;
 
 import android.content.ClipData;
 import android.content.ClipboardManager;

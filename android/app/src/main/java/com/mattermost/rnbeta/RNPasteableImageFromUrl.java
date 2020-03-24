@@ -1,4 +1,4 @@
-package com.mattermost.rnbeta;
+package com.bulletin.schools;
 
 import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.ReactContext;

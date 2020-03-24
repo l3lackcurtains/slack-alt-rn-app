@@ -1,4 +1,4 @@
-package com.mattermost.rnbeta;
+package com.bulletin.schools;
 
 import androidx.core.view.inputmethod.EditorInfoCompat;
 import androidx.core.view.inputmethod.InputConnectionCompat;

@@ -1,4 +1,4 @@
-package com.mattermost.rnbeta;
+package com.bulletin.schools;
 
 import android.app.Notification;
 import android.app.NotificationChannel;

@@ -1,27 +1,22 @@
 // Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
-import React, {PureComponent} from 'react';
-import PropTypes from 'prop-types';
-import {intlShape, injectIntl} from 'react-intl';
-import {
-    Linking,
-    Platform,
-    ScrollView,
-    View,
-} from 'react-native';
-import DeviceInfo from 'react-native-device-info';
-import {Navigation} from 'react-native-navigation';
-
-import SettingsItem from 'app/screens/settings/settings_item';
+import { dismissModal, goToScreen } from 'app/actions/navigation';
 import StatusBar from 'app/components/status_bar';
-import {preventDoubleTap} from 'app/utils/tap';
-import {changeOpacity, makeStyleSheetFromTheme} from 'app/utils/theme';
-import {isValidUrl} from 'app/utils/url';
-import {t} from 'app/utils/i18n';
-import {goToScreen, dismissModal} from 'app/actions/navigation';
-
+import SettingsItem from 'app/screens/settings/settings_item';
+import { t } from 'app/utils/i18n';
+import { preventDoubleTap } from 'app/utils/tap';
+import { changeOpacity, makeStyleSheetFromTheme } from 'app/utils/theme';
+import { isValidUrl } from 'app/utils/url';
 import LocalConfig from 'assets/config';
+import PropTypes from 'prop-types';
+import React, { PureComponent } from 'react';
+import { injectIntl, intlShape } from 'react-intl';
+import { Linking, Platform, ScrollView, View } from 'react-native';
+import DeviceInfo from 'react-native-device-info';
+import { Navigation } from 'react-native-navigation';
+
+
 
 class Settings extends PureComponent {
     static propTypes = {
@@ -49,14 +44,14 @@ class Settings extends PureComponent {
         this.navigationEventListener = Navigation.events().bindComponent(this);
     }
 
-    navigationButtonPressed({buttonId}) {
+    navigationButtonPressed({ buttonId }) {
         if (buttonId === 'close-settings') {
             dismissModal();
         }
     }
 
     errorEmailBody = () => {
-        const {config, currentUserId, currentTeamId, errors} = this.props;
+        const { config, currentUserId, currentTeamId, errors } = this.props;
         let contents = [
             'Please share a description of the problem:\n\n',
             `Current User Id: ${currentUserId}`,
@@ -67,7 +62,7 @@ class Settings extends PureComponent {
         ];
         if (errors.length) {
             const errorArray = errors.map((e) => {
-                const {error} = e;
+                const { error } = e;
                 const stack = error.stack || '';
                 return `Date: ${e.date}\nMessage: ${error.message}\nStack trace:\n${stack}\n\n`;
             }).join('');
@@ -82,41 +77,41 @@ class Settings extends PureComponent {
     };
 
     goToAbout = preventDoubleTap(() => {
-        const {intl, config} = this.props;
+        const { intl } = this.props;
         const screen = 'About';
-        const title = intl.formatMessage({id: 'about.title', defaultMessage: 'About {appTitle}'}, {appTitle: config.SiteName || 'Mattermost'});
+        const title = intl.formatMessage({ id: 'about.title', defaultMessage: 'About Bulletin' }, { appTitle: 'Bulletin' });
 
         goToScreen(screen, title);
     });
 
     goToNotifications = preventDoubleTap(() => {
-        const {intl} = this.props;
+        const { intl } = this.props;
         const screen = 'NotificationSettings';
-        const title = intl.formatMessage({id: 'user.settings.modal.notifications', defaultMessage: 'Notifications'});
+        const title = intl.formatMessage({ id: 'user.settings.modal.notifications', defaultMessage: 'Notifications' });
 
         goToScreen(screen, title);
     });
 
     goToDisplaySettings = preventDoubleTap(() => {
-        const {intl} = this.props;
+        const { intl } = this.props;
         const screen = 'DisplaySettings';
-        const title = intl.formatMessage({id: 'user.settings.modal.display', defaultMessage: 'Display'});
+        const title = intl.formatMessage({ id: 'user.settings.modal.display', defaultMessage: 'Display' });
 
         goToScreen(screen, title);
     });
 
     goToAdvancedSettings = preventDoubleTap(() => {
-        const {intl} = this.props;
+        const { intl } = this.props;
         const screen = 'AdvancedSettings';
-        const title = intl.formatMessage({id: 'mobile.advanced_settings.title', defaultMessage: 'Advanced Settings'});
+        const title = intl.formatMessage({ id: 'mobile.advanced_settings.title', defaultMessage: 'Advanced Settings' });
 
         goToScreen(screen, title);
     });
 
     goToSelectTeam = preventDoubleTap(() => {
-        const {currentUrl, intl} = this.props;
+        const { currentUrl, intl } = this.props;
         const screen = 'SelectTeam';
-        const title = intl.formatMessage({id: 'mobile.routes.selectTeam', defaultMessage: 'Select Team'});
+        const title = intl.formatMessage({ id: 'mobile.routes.selectTeam', defaultMessage: 'Select Team' });
         const passProps = {
             currentUrl,
         };
@@ -125,9 +120,9 @@ class Settings extends PureComponent {
     });
 
     goToClientUpgrade = preventDoubleTap(() => {
-        const {intl} = this.props;
+        const { intl } = this.props;
         const screen = 'ClientUpgrade';
-        const title = intl.formatMessage({id: 'mobile.client_upgrade', defaultMessage: 'Upgrade App'});
+        const title = intl.formatMessage({ id: 'mobile.client_upgrade', defaultMessage: 'Upgrade App' });
         const passProps = {
             userCheckedForUpgrade: true,
         };
@@ -136,7 +131,7 @@ class Settings extends PureComponent {
     });
 
     openErrorEmail = preventDoubleTap(() => {
-        const {config} = this.props;
+        const { config } = this.props;
         const recipient = config.SupportEmail;
         const subject = `Problem with ${config.SiteName} React Native app`;
         const mailTo = `mailto:${recipient}?subject=${subject}&body=${this.errorEmailBody()}`;
@@ -150,7 +145,7 @@ class Settings extends PureComponent {
     });
 
     openHelp = preventDoubleTap(() => {
-        const {config} = this.props;
+        const { config } = this.props;
         const link = config.HelpLink ? config.HelpLink.toLowerCase() : '';
 
         Linking.canOpenURL(link).then((supported) => {
@@ -161,7 +156,7 @@ class Settings extends PureComponent {
     });
 
     render() {
-        const {config, joinableTeams, theme, isLandscape} = this.props;
+        const { config, joinableTeams, theme, isLandscape } = this.props;
         const style = getStyleSheet(theme);
         const showTeams = joinableTeams.length > 0;
         const showHelp = isValidUrl(config.HelpLink);
@@ -169,12 +164,12 @@ class Settings extends PureComponent {
 
         return (
             <View style={style.container}>
-                <StatusBar/>
+                <StatusBar />
                 <ScrollView
                     alwaysBounceVertical={false}
                     contentContainerStyle={style.wrapper}
                 >
-                    <View style={style.divider}/>
+                    <View style={style.divider} />
                     <SettingsItem
                         defaultMessage='Notifications'
                         i18nId={t('user.settings.modal.notifications')}
@@ -198,34 +193,34 @@ class Settings extends PureComponent {
                         isLandscape={isLandscape}
                     />
                     {showTeams &&
-                    <React.Fragment>
-                        <SettingsItem
-                            defaultMessage='Open teams you can join'
-                            i18nId={t('mobile.select_team.join_open')}
-                            iconName='list'
-                            iconType='foundation'
-                            onPress={this.goToSelectTeam}
-                            showArrow={showArrow}
-                            theme={theme}
-                            separator={true}
-                            isLandscape={isLandscape}
-                        />
-                    </React.Fragment>
+                        <React.Fragment>
+                            <SettingsItem
+                                defaultMessage='Open teams you can join'
+                                i18nId={t('mobile.select_team.join_open')}
+                                iconName='list'
+                                iconType='foundation'
+                                onPress={this.goToSelectTeam}
+                                showArrow={showArrow}
+                                theme={theme}
+                                separator={true}
+                                isLandscape={isLandscape}
+                            />
+                        </React.Fragment>
                     }
                     {showHelp &&
-                    <React.Fragment>
-                        <SettingsItem
-                            defaultMessage='Help'
-                            i18nId={t('mobile.help.title')}
-                            iconName='md-help'
-                            iconType='ion'
-                            onPress={this.openHelp}
-                            showArrow={showArrow}
-                            theme={theme}
-                            separator={true}
-                            isLandscape={isLandscape}
-                        />
-                    </React.Fragment>
+                        <React.Fragment>
+                            <SettingsItem
+                                defaultMessage='Help'
+                                i18nId={t('mobile.help.title')}
+                                iconName='md-help'
+                                iconType='ion'
+                                onPress={this.openHelp}
+                                showArrow={showArrow}
+                                theme={theme}
+                                separator={true}
+                                isLandscape={isLandscape}
+                            />
+                        </React.Fragment>
                     }
                     <SettingsItem
                         defaultMessage='Report a Problem'
@@ -250,23 +245,23 @@ class Settings extends PureComponent {
                         isLandscape={isLandscape}
                     />
                     {LocalConfig.EnableMobileClientUpgrade && LocalConfig.EnableMobileClientUpgradeUserSetting &&
-                    <React.Fragment>
-                        <SettingsItem
-                            defaultMessage='Check for Upgrade'
-                            i18nId={t('mobile.settings.modal.check_for_upgrade')}
-                            iconName='update'
-                            iconType='material'
-                            onPress={this.goToClientUpgrade}
-                            showArrow={showArrow}
-                            theme={theme}
-                            separator={true}
-                            isLandscape={isLandscape}
-                        />
-                    </React.Fragment>
+                        <React.Fragment>
+                            <SettingsItem
+                                defaultMessage='Check for Upgrade'
+                                i18nId={t('mobile.settings.modal.check_for_upgrade')}
+                                iconName='update'
+                                iconType='material'
+                                onPress={this.goToClientUpgrade}
+                                showArrow={showArrow}
+                                theme={theme}
+                                separator={true}
+                                isLandscape={isLandscape}
+                            />
+                        </React.Fragment>
                     }
                     <SettingsItem
                         defaultMessage='About {appTitle}'
-                        messageValues={{appTitle: config.SiteName || 'Mattermost'}}
+                        messageValues={{ appTitle: config.SiteName || 'Mattermost' }}
                         i18nId={t('about.title')}
                         iconName='ios-information-circle'
                         iconType='ion'
@@ -276,7 +271,7 @@ class Settings extends PureComponent {
                         theme={theme}
                         isLandscape={isLandscape}
                     />
-                    <View style={style.divider}/>
+                    <View style={style.divider} />
                 </ScrollView>
             </View>
         );
