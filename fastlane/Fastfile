@@ -688,7 +688,7 @@ platform :android do
     config_mode = ENV['BUILD_FOR_RELEASE'] == 'true' ? 'Release' : 'Debug'
 
     gradle(
-        task: 'app:bundle',
+        task: 'app:assemble',
         build_type: config_mode,
         project_dir: 'android/'
     )
