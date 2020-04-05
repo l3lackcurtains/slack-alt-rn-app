@@ -11,7 +11,6 @@ import Config from 'assets/config';
 import PropTypes from 'prop-types';
 import React, { PureComponent } from 'react';
 import { Linking, ScrollView, Text, TouchableOpacity, View } from 'react-native';
-import DeviceInfo from 'react-native-device-info';
 
 
 const MATTERMOST_BUNDLE_IDS = ['com.bulletin.schools', 'com.mattermost.rn'];
@@ -222,111 +221,8 @@ export default class About extends PureComponent {
                             <Text style={style.title}>
                                 {'Bulletin'}
                             </Text>
-                            {title}
                         </View>
                         {subTitle}
-                        <FormattedText
-                            id='mobile.about.appVersion'
-                            defaultMessage='App Version: {version} (Build {number})'
-                            style={style.info}
-                            values={{
-                                version: DeviceInfo.getVersion(),
-                                number: DeviceInfo.getBuildNumber(),
-                            }}
-                        />
-                        {serverVersion}
-                        <FormattedText
-                            id='mobile.about.database'
-                            defaultMessage='Database: {type}'
-                            style={style.info}
-                            values={{
-                                type: config.SQLDriverName,
-                            }}
-                        />
-                        {licensee}
-                        {learnMore}
-                        {!MATTERMOST_BUNDLE_IDS.includes(DeviceInfo.getBundleId()) &&
-                            <FormattedText
-                                id='mobile.about.powered_by'
-                                defaultMessage='{site} is powered by Bulletin'
-                                style={style.footerText}
-                                values={{
-                                    site: this.props.config.SiteName,
-                                }}
-                            />
-                        }
-                        <FormattedText
-                            id='mobile.about.copyright'
-                            defaultMessage='Copyright 2015-{currentYear} Bulletin, Inc. All rights reserved'
-                            style={[style.footerText, style.copyrightText]}
-                            values={{
-                                currentYear: new Date().getFullYear(),
-                            }}
-                        />
-                        <View style={style.tosPrivacyContainer}>
-                            {termsOfService}
-                            {tosPrivacyHyphen}
-                            {privacyPolicy}
-                        </View>
-                        <View style={style.noticeContainer}>
-                            <View style={style.footerGroup}>
-                                <FormattedText
-                                    id='mobile.notice_text'
-                                    defaultMessage='Bulletin is made possible by the open source software used in our {platform} and {mobile}.'
-                                    style={style.footerText}
-                                    values={{
-                                        platform: (
-                                            <FormattedText
-                                                id='mobile.notice_platform_link'
-                                                defaultMessage='server'
-                                                style={style.noticeLink}
-                                                onPress={this.handlePlatformNotice}
-                                            />
-                                        ),
-                                        mobile: (
-                                            <FormattedText
-                                                id='mobile.notice_mobile_link'
-                                                defaultMessage='mobile apps'
-                                                style={[style.noticeLink, { marginLeft: 5 }]}
-                                                onPress={this.handleMobileNotice}
-                                            />
-                                        ),
-                                    }}
-                                />
-                            </View>
-                        </View>
-                        <View style={style.hashContainer}>
-                            <View style={style.footerGroup}>
-                                <FormattedText
-                                    id='about.hash'
-                                    defaultMessage='Build Hash:'
-                                    style={style.footerTitleText}
-                                />
-                                <Text style={style.footerText}>
-                                    {config.BuildHash}
-                                </Text>
-                            </View>
-                            <View style={style.footerGroup}>
-                                <FormattedText
-                                    id='about.hashee'
-                                    defaultMessage='EE Build Hash:'
-                                    style={style.footerTitleText}
-                                />
-                                <Text style={style.footerText}>
-                                    {config.BuildHashEnterprise}
-                                </Text>
-                            </View>
-                        </View>
-                        <View style={style.footerGroup}>
-                            <FormattedText
-                                id='about.date'
-                                defaultMessage='Build Date:'
-                                style={style.footerTitleText}
-                            />
-                            <Text style={style.footerText}>
-                                {config.BuildDate}
-                            </Text>
-                        </View>
                     </View>
                 </ScrollView>
             </View>

@@ -12,7 +12,7 @@
     "MobileNoticeURL": "http://bulletinschools.com/",
     "SegmentApiKey": "",
 
-    "HideEmailLoginExperimental": true,
+    "HideEmailLoginExperimental": false,
     "HideGitLabLoginExperimental": true,
     "HideLDAPLoginExperimental": true,
     "HideSAMLLoginExperimental": true,
