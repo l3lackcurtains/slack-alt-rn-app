@@ -1,16 +1,16 @@
 // Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
-import {GeneralTypes, UserTypes} from 'mattermost-redux/action_types';
-import {getDataRetentionPolicy} from 'mattermost-redux/actions/general';
-import * as HelperActions from 'mattermost-redux/actions/helpers';
-import {loadRolesIfNeeded} from 'mattermost-redux/actions/roles';
-import {autoUpdateTimezone} from 'mattermost-redux/actions/timezone';
-import {Client4} from 'mattermost-redux/client';
-import {General} from 'mattermost-redux/constants';
-import {getConfig, getLicense} from 'mattermost-redux/selectors/entities/general';
-import {isTimezoneEnabled} from 'mattermost-redux/selectors/entities/timezone';
-import {getCurrentUserId} from 'mattermost-redux/selectors/entities/users';
+import {GeneralTypes, UserTypes} from 'bulletin-redux/action_types';
+import {getDataRetentionPolicy} from 'bulletin-redux/actions/general';
+import * as HelperActions from 'bulletin-redux/actions/helpers';
+import {loadRolesIfNeeded} from 'bulletin-redux/actions/roles';
+import {autoUpdateTimezone} from 'bulletin-redux/actions/timezone';
+import {Client4} from 'bulletin-redux/client';
+import {General} from 'bulletin-redux/constants';
+import {getConfig, getLicense} from 'bulletin-redux/selectors/entities/general';
+import {isTimezoneEnabled} from 'bulletin-redux/selectors/entities/timezone';
+import {getCurrentUserId} from 'bulletin-redux/selectors/entities/users';
 
 import {setAppCredentials} from 'app/init/credentials';
 import {setCSRFFromCookie} from 'app/utils/security';

@@ -4,17 +4,17 @@
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 
-import {getChannel as getChannelAction, joinChannel} from 'mattermost-redux/actions/channels';
+import {getChannel as getChannelAction, joinChannel} from 'bulletin-redux/actions/channels';
 import {
     getPostsAround,
     getPostThread,
     selectPost,
-} from 'mattermost-redux/actions/posts';
-import {makeGetChannel, getMyChannelMemberships} from 'mattermost-redux/selectors/entities/channels';
-import {makeGetPostIdsAroundPost, getPost} from 'mattermost-redux/selectors/entities/posts';
-import {getTheme} from 'mattermost-redux/selectors/entities/preferences';
-import {getCurrentTeamId} from 'mattermost-redux/selectors/entities/teams';
-import {getCurrentUserId} from 'mattermost-redux/selectors/entities/users';
+} from 'bulletin-redux/actions/posts';
+import {makeGetChannel, getMyChannelMemberships} from 'bulletin-redux/selectors/entities/channels';
+import {makeGetPostIdsAroundPost, getPost} from 'bulletin-redux/selectors/entities/posts';
+import {getTheme} from 'bulletin-redux/selectors/entities/preferences';
+import {getCurrentTeamId} from 'bulletin-redux/selectors/entities/teams';
+import {getCurrentUserId} from 'bulletin-redux/selectors/entities/users';
 import {isLandscape} from 'app/selectors/device';
 
 import {

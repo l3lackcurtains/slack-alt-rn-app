@@ -16,7 +16,7 @@ import EphemeralStore from 'app/store/ephemeral_store';
 import { waitForHydration } from 'app/store/utils';
 import telemetry from 'app/telemetry';
 import pushNotificationsUtils from 'app/utils/push_notifications';
-import EventEmitter from 'mattermost-redux/utils/event_emitter';
+import EventEmitter from 'bulletin-redux/utils/event_emitter';
 import { Linking } from 'react-native';
 import { Navigation } from 'react-native-navigation';
 import { Provider } from 'react-redux';

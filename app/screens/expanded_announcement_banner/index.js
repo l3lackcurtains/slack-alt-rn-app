@@ -4,8 +4,8 @@
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 
-import {getConfig} from 'mattermost-redux/selectors/entities/general';
-import {getTheme} from 'mattermost-redux/selectors/entities/preferences';
+import {getConfig} from 'bulletin-redux/selectors/entities/general';
+import {getTheme} from 'bulletin-redux/selectors/entities/preferences';
 
 import {dismissBanner} from 'app/actions/views/announcement';
 

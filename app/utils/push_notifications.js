@@ -4,11 +4,11 @@
 import {Platform} from 'react-native';
 import DeviceInfo from 'react-native-device-info';
 
-import {setDeviceToken} from 'mattermost-redux/actions/general';
-import {getPosts} from 'mattermost-redux/actions/posts';
-import {Client4} from 'mattermost-redux/client';
-import {General} from 'mattermost-redux/constants';
-import EventEmitter from 'mattermost-redux/utils/event_emitter';
+import {setDeviceToken} from 'bulletin-redux/actions/general';
+import {getPosts} from 'bulletin-redux/actions/posts';
+import {Client4} from 'bulletin-redux/client';
+import {General} from 'bulletin-redux/constants';
+import EventEmitter from 'bulletin-redux/utils/event_emitter';
 
 import {markChannelViewedAndRead, retryGetPostsAction} from 'app/actions/views/channel';
 import {

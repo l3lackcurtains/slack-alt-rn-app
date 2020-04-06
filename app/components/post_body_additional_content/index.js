@@ -4,11 +4,11 @@
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
-import {getRedirectLocation} from 'mattermost-redux/actions/general';
-import {Preferences} from 'mattermost-redux/constants';
-import {getConfig} from 'mattermost-redux/selectors/entities/general';
-import {getOpenGraphMetadataForUrl, getExpandedLink} from 'mattermost-redux/selectors/entities/posts';
-import {getBool, getTheme} from 'mattermost-redux/selectors/entities/preferences';
+import {getRedirectLocation} from 'bulletin-redux/actions/general';
+import {Preferences} from 'bulletin-redux/constants';
+import {getConfig} from 'bulletin-redux/selectors/entities/general';
+import {getOpenGraphMetadataForUrl, getExpandedLink} from 'bulletin-redux/selectors/entities/posts';
+import {getBool, getTheme} from 'bulletin-redux/selectors/entities/preferences';
 
 import {ViewTypes} from 'app/constants';
 import {getDimensions} from 'app/selectors/device';

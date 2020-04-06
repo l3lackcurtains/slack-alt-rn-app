@@ -4,9 +4,9 @@
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 
-import {stopPeriodicStatusUpdates, startPeriodicStatusUpdates, logout} from 'mattermost-redux/actions/users';
-import {init as initWebSocket, close as closeWebSocket} from 'mattermost-redux/actions/websocket';
-import {getCurrentChannelId} from 'mattermost-redux/selectors/entities/channels';
+import {stopPeriodicStatusUpdates, startPeriodicStatusUpdates, logout} from 'bulletin-redux/actions/users';
+import {init as initWebSocket, close as closeWebSocket} from 'bulletin-redux/actions/websocket';
+import {getCurrentChannelId} from 'bulletin-redux/selectors/entities/channels';
 
 import {connection} from 'app/actions/device';
 import {markChannelViewedAndReadOnReconnect, setChannelRetryFailed} from 'app/actions/views/channel';

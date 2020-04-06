@@ -4,7 +4,7 @@
 import store from 'app/store';
 import EphemeralStore from 'app/store/ephemeral_store';
 import merge from 'deepmerge';
-import { getTheme } from 'mattermost-redux/selectors/entities/preferences';
+import { getTheme } from 'bulletin-redux/selectors/entities/preferences';
 import { Keyboard, Platform } from 'react-native';
 import { Navigation } from 'react-native-navigation';
 

@@ -3,15 +3,15 @@
 
 import {createSelector} from 'reselect';
 
-import {General} from 'mattermost-redux/constants';
-import {getConfig} from 'mattermost-redux/selectors/entities/general';
-import {getMyChannels, getOtherChannels} from 'mattermost-redux/selectors/entities/channels';
+import {General} from 'bulletin-redux/constants';
+import {getConfig} from 'bulletin-redux/selectors/entities/general';
+import {getMyChannels, getOtherChannels} from 'bulletin-redux/selectors/entities/channels';
 import {
     getCurrentUser, getProfilesInCurrentChannel,
     getProfilesNotInCurrentChannel, getProfilesInCurrentTeam,
-} from 'mattermost-redux/selectors/entities/users';
-import {sortChannelsByDisplayName} from 'mattermost-redux/utils/channel_utils';
-import {sortByUsername} from 'mattermost-redux/utils/user_utils';
+} from 'bulletin-redux/selectors/entities/users';
+import {sortChannelsByDisplayName} from 'bulletin-redux/utils/channel_utils';
+import {sortByUsername} from 'bulletin-redux/utils/user_utils';
 
 import * as Autocomplete from 'app/constants/autocomplete';
 import {getCurrentLocale} from 'app/selectors/i18n';

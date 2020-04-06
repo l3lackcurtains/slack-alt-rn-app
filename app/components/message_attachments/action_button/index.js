@@ -4,8 +4,8 @@
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 
-import {doPostActionWithCookie} from 'mattermost-redux/actions/posts';
-import {getTheme} from 'mattermost-redux/selectors/entities/preferences';
+import {doPostActionWithCookie} from 'bulletin-redux/actions/posts';
+import {getTheme} from 'bulletin-redux/selectors/entities/preferences';
 
 import ActionButton from './action_button';
 

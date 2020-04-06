@@ -3,8 +3,8 @@
 
 import {connect} from 'react-redux';
 
-import {getTheme} from 'mattermost-redux/selectors/entities/preferences';
-import {isTimezoneEnabled} from 'mattermost-redux/selectors/entities/timezone';
+import {getTheme} from 'bulletin-redux/selectors/entities/preferences';
+import {isTimezoneEnabled} from 'bulletin-redux/selectors/entities/timezone';
 
 import {getAllowedThemes} from 'app/selectors/theme';
 import {isThemeSwitchingEnabled} from 'app/utils/theme';

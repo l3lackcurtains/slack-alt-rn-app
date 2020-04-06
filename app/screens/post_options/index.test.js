@@ -2,16 +2,16 @@
 // See LICENSE.txt for license information.
 import {makeMapStateToProps} from './index';
 
-import * as channelSelectors from 'mattermost-redux/selectors/entities/channels';
-import * as generalSelectors from 'mattermost-redux/selectors/entities/general';
-import * as userSelectors from 'mattermost-redux/selectors/entities/users';
-import * as commonSelectors from 'mattermost-redux/selectors/entities/common';
-import * as teamSelectors from 'mattermost-redux/selectors/entities/teams';
+import * as channelSelectors from 'bulletin-redux/selectors/entities/channels';
+import * as generalSelectors from 'bulletin-redux/selectors/entities/general';
+import * as userSelectors from 'bulletin-redux/selectors/entities/users';
+import * as commonSelectors from 'bulletin-redux/selectors/entities/common';
+import * as teamSelectors from 'bulletin-redux/selectors/entities/teams';
 import * as deviceSelectors from 'app/selectors/device';
-import * as preferencesSelectors from 'mattermost-redux/selectors/entities/preferences';
-import {isMinimumServerVersion} from 'mattermost-redux/utils/helpers';
+import * as preferencesSelectors from 'bulletin-redux/selectors/entities/preferences';
+import {isMinimumServerVersion} from 'bulletin-redux/utils/helpers';
 
-jest.mock('mattermost-redux/utils/post_utils');
+jest.mock('bulletin-redux/utils/post_utils');
 
 channelSelectors.getChannel = jest.fn();
 channelSelectors.getCurrentChannelId = jest.fn();

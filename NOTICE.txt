@@ -917,7 +917,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ## mattermost-redux
 
-This product contains 'mattermost-redux' by Mattermost.
+This product contains 'bulletin-redux' by Mattermost.
 
 Common code (API client, Redux stores, logic, utility functions) for building a Mattermost client
 

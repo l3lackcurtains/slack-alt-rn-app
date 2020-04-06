@@ -5,7 +5,7 @@ import assert from 'assert';
 
 import Config from 'assets/config.json';
 
-import Client from 'mattermost-redux/client/client4';
+import Client from 'bulletin-redux/client/client4';
 
 const PASSWORD = 'password1';
 

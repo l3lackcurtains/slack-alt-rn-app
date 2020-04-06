@@ -3,14 +3,14 @@
 
 import moment from 'moment-timezone';
 
-import {getDataRetentionPolicy} from 'mattermost-redux/actions/general';
-import {GeneralTypes} from 'mattermost-redux/action_types';
-import {getSessions} from 'mattermost-redux/actions/users';
-import {autoUpdateTimezone} from 'mattermost-redux/actions/timezone';
-import {Client4} from 'mattermost-redux/client';
-import {getConfig, getLicense} from 'mattermost-redux/selectors/entities/general';
-import {isTimezoneEnabled} from 'mattermost-redux/selectors/entities/timezone';
-import {getCurrentUserId} from 'mattermost-redux/selectors/entities/users';
+import {getDataRetentionPolicy} from 'bulletin-redux/actions/general';
+import {GeneralTypes} from 'bulletin-redux/action_types';
+import {getSessions} from 'bulletin-redux/actions/users';
+import {autoUpdateTimezone} from 'bulletin-redux/actions/timezone';
+import {Client4} from 'bulletin-redux/client';
+import {getConfig, getLicense} from 'bulletin-redux/selectors/entities/general';
+import {isTimezoneEnabled} from 'bulletin-redux/selectors/entities/timezone';
+import {getCurrentUserId} from 'bulletin-redux/selectors/entities/users';
 
 import {ViewTypes} from 'app/constants';
 import {setAppCredentials} from 'app/init/credentials';

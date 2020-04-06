@@ -7,13 +7,13 @@ import {connect} from 'react-redux';
 import {setChannelDisplayName} from 'app/actions/views/channel';
 import {makeDirectChannel} from 'app/actions/views/more_dms';
 import {isLandscape} from 'app/selectors/device';
-import {getConfig} from 'mattermost-redux/selectors/entities/general';
-import {getTeammateNameDisplaySetting, getTheme, getBool} from 'mattermost-redux/selectors/entities/preferences';
-import {isTimezoneEnabled} from 'mattermost-redux/selectors/entities/timezone';
-import Preferences from 'mattermost-redux/constants/preferences';
-import {loadBot} from 'mattermost-redux/actions/bots';
-import {getBotAccounts} from 'mattermost-redux/selectors/entities/bots';
-import {getCurrentUserId} from 'mattermost-redux/selectors/entities/users';
+import {getConfig} from 'bulletin-redux/selectors/entities/general';
+import {getTeammateNameDisplaySetting, getTheme, getBool} from 'bulletin-redux/selectors/entities/preferences';
+import {isTimezoneEnabled} from 'bulletin-redux/selectors/entities/timezone';
+import Preferences from 'bulletin-redux/constants/preferences';
+import {loadBot} from 'bulletin-redux/actions/bots';
+import {getBotAccounts} from 'bulletin-redux/selectors/entities/bots';
+import {getCurrentUserId} from 'bulletin-redux/selectors/entities/users';
 
 import UserProfile from './user_profile';
 

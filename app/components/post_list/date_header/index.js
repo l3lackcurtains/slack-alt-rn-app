@@ -3,10 +3,10 @@
 
 import {connect} from 'react-redux';
 
-import {getCurrentUser} from 'mattermost-redux/selectors/entities/users';
-import {getTheme} from 'mattermost-redux/selectors/entities/preferences';
-import {isTimezoneEnabled} from 'mattermost-redux/selectors/entities/timezone';
-import {getUserCurrentTimezone} from 'mattermost-redux/utils/timezone_utils';
+import {getCurrentUser} from 'bulletin-redux/selectors/entities/users';
+import {getTheme} from 'bulletin-redux/selectors/entities/preferences';
+import {isTimezoneEnabled} from 'bulletin-redux/selectors/entities/timezone';
+import {getUserCurrentTimezone} from 'bulletin-redux/utils/timezone_utils';
 
 import DateHeader from './date_header';
 

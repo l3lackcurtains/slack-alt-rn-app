@@ -3,21 +3,21 @@
 
 import {connect} from 'react-redux';
 
-import {General} from 'mattermost-redux/constants';
+import {General} from 'bulletin-redux/constants';
 import {
     getSortedFavoriteChannelIds,
     getSortedUnreadChannelIds,
     getOrderedChannelIds,
-} from 'mattermost-redux/selectors/entities/channels';
-import {getCurrentUserId, getCurrentUserRoles} from 'mattermost-redux/selectors/entities/users';
-import {getCurrentTeamId} from 'mattermost-redux/selectors/entities/teams';
-import {getTheme, getFavoritesPreferences, getSidebarPreferences} from 'mattermost-redux/selectors/entities/preferences';
-import {showCreateOption} from 'mattermost-redux/utils/channel_utils';
-import {memoizeResult} from 'mattermost-redux/utils/helpers';
-import {isAdmin as checkIsAdmin, isSystemAdmin as checkIsSystemAdmin} from 'mattermost-redux/utils/user_utils';
-import {getConfig, getLicense, hasNewPermissions} from 'mattermost-redux/selectors/entities/general';
-import {haveITeamPermission} from 'mattermost-redux/selectors/entities/roles';
-import Permissions from 'mattermost-redux/constants/permissions';
+} from 'bulletin-redux/selectors/entities/channels';
+import {getCurrentUserId, getCurrentUserRoles} from 'bulletin-redux/selectors/entities/users';
+import {getCurrentTeamId} from 'bulletin-redux/selectors/entities/teams';
+import {getTheme, getFavoritesPreferences, getSidebarPreferences} from 'bulletin-redux/selectors/entities/preferences';
+import {showCreateOption} from 'bulletin-redux/utils/channel_utils';
+import {memoizeResult} from 'bulletin-redux/utils/helpers';
+import {isAdmin as checkIsAdmin, isSystemAdmin as checkIsSystemAdmin} from 'bulletin-redux/utils/user_utils';
+import {getConfig, getLicense, hasNewPermissions} from 'bulletin-redux/selectors/entities/general';
+import {haveITeamPermission} from 'bulletin-redux/selectors/entities/roles';
+import Permissions from 'bulletin-redux/constants/permissions';
 
 import {isLandscape} from 'app/selectors/device';
 import {DeviceTypes, ViewTypes} from 'app/constants';

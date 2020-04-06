@@ -1,13 +1,13 @@
 // Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
-import {getChannel} from 'mattermost-redux/selectors/entities/channels';
-import * as PostUtils from 'mattermost-redux/utils/post_utils';
+import {getChannel} from 'bulletin-redux/selectors/entities/channels';
+import * as PostUtils from 'bulletin-redux/utils/post_utils';
 
 import {makeMapStateToProps} from './index.js';
 
-jest.mock('mattermost-redux/selectors/entities/channels', () => {
-    const channels = require.requireActual('mattermost-redux/selectors/entities/channels');
+jest.mock('bulletin-redux/selectors/entities/channels', () => {
+    const channels = require.requireActual('bulletin-redux/selectors/entities/channels');
 
     return {
         ...channels,
@@ -17,16 +17,16 @@ jest.mock('mattermost-redux/selectors/entities/channels', () => {
     };
 });
 
-jest.mock('mattermost-redux/selectors/entities/preferences', () => {
-    const preferences = require.requireActual('mattermost-redux/selectors/entities/preferences');
+jest.mock('bulletin-redux/selectors/entities/preferences', () => {
+    const preferences = require.requireActual('bulletin-redux/selectors/entities/preferences');
     return {
         ...preferences,
         getTheme: jest.fn(),
     };
 });
 
-jest.mock('mattermost-redux/selectors/entities/general', () => {
-    const general = require.requireActual('mattermost-redux/selectors/entities/general');
+jest.mock('bulletin-redux/selectors/entities/general', () => {
+    const general = require.requireActual('bulletin-redux/selectors/entities/general');
     return {
         ...general,
         getConfig: jest.fn(),
@@ -34,8 +34,8 @@ jest.mock('mattermost-redux/selectors/entities/general', () => {
     };
 });
 
-jest.mock('mattermost-redux/selectors/entities/users', () => {
-    const users = require.requireActual('mattermost-redux/selectors/entities/users');
+jest.mock('bulletin-redux/selectors/entities/users', () => {
+    const users = require.requireActual('bulletin-redux/selectors/entities/users');
     return {
         ...users,
         getCurrentUserId: jest.fn(),
@@ -43,24 +43,24 @@ jest.mock('mattermost-redux/selectors/entities/users', () => {
     };
 });
 
-jest.mock('mattermost-redux/selectors/entities/teams', () => {
-    const teams = require.requireActual('mattermost-redux/selectors/entities/teams');
+jest.mock('bulletin-redux/selectors/entities/teams', () => {
+    const teams = require.requireActual('bulletin-redux/selectors/entities/teams');
     return {
         ...teams,
         getCurrentTeamId: jest.fn(),
     };
 });
 
-jest.mock('mattermost-redux/selectors/entities/emojis', () => {
-    const emojis = require.requireActual('mattermost-redux/selectors/entities/emojis');
+jest.mock('bulletin-redux/selectors/entities/emojis', () => {
+    const emojis = require.requireActual('bulletin-redux/selectors/entities/emojis');
     return {
         ...emojis,
         getCustomEmojisByName: jest.fn(),
     };
 });
 
-jest.mock('mattermost-redux/selectors/entities/posts', () => {
-    const posts = require.requireActual('mattermost-redux/selectors/entities/posts');
+jest.mock('bulletin-redux/selectors/entities/posts', () => {
+    const posts = require.requireActual('bulletin-redux/selectors/entities/posts');
     return {
         ...posts,
         makeGetReactionsForPost: () => jest.fn(),

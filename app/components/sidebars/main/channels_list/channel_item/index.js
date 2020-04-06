@@ -3,17 +3,17 @@
 
 import {connect} from 'react-redux';
 
-import {General} from 'mattermost-redux/constants';
+import {General} from 'bulletin-redux/constants';
 import {
     getCurrentChannelId,
     makeGetChannel,
     getMyChannelMember,
     shouldHideDefaultChannel,
-} from 'mattermost-redux/selectors/entities/channels';
-import {getTheme, getTeammateNameDisplaySetting} from 'mattermost-redux/selectors/entities/preferences';
-import {getCurrentUserId, getUser} from 'mattermost-redux/selectors/entities/users';
-import {getUserIdFromChannelName, isChannelMuted} from 'mattermost-redux/utils/channel_utils';
-import {displayUsername} from 'mattermost-redux/utils/user_utils';
+} from 'bulletin-redux/selectors/entities/channels';
+import {getTheme, getTeammateNameDisplaySetting} from 'bulletin-redux/selectors/entities/preferences';
+import {getCurrentUserId, getUser} from 'bulletin-redux/selectors/entities/users';
+import {getUserIdFromChannelName, isChannelMuted} from 'bulletin-redux/utils/channel_utils';
+import {displayUsername} from 'bulletin-redux/utils/user_utils';
 import {isLandscape} from 'app/selectors/device';
 import {getDraftForChannel} from 'app/selectors/views';
 import {isGuest as isGuestUser} from 'app/utils/users';

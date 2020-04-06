@@ -3,11 +3,11 @@
 
 import {connect} from 'react-redux';
 
-import {General} from 'mattermost-redux/constants';
-import {getCurrentChannel, getMyCurrentChannelMembership, getCurrentChannelStats} from 'mattermost-redux/selectors/entities/channels';
-import {getTheme} from 'mattermost-redux/selectors/entities/preferences';
-import {getCurrentUserId, getUser} from 'mattermost-redux/selectors/entities/users';
-import {getUserIdFromChannelName, isChannelMuted} from 'mattermost-redux/utils/channel_utils';
+import {General} from 'bulletin-redux/constants';
+import {getCurrentChannel, getMyCurrentChannelMembership, getCurrentChannelStats} from 'bulletin-redux/selectors/entities/channels';
+import {getTheme} from 'bulletin-redux/selectors/entities/preferences';
+import {getCurrentUserId, getUser} from 'bulletin-redux/selectors/entities/users';
+import {getUserIdFromChannelName, isChannelMuted} from 'bulletin-redux/utils/channel_utils';
 
 import {isGuest} from 'app/utils/users';
 

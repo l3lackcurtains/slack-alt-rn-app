@@ -4,11 +4,11 @@
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 
-import {getTeams, addUserToTeam, joinTeam} from 'mattermost-redux/actions/teams';
-import {logout} from 'mattermost-redux/actions/users';
-import {getTheme} from 'mattermost-redux/selectors/entities/preferences';
-import {getJoinableTeams} from 'mattermost-redux/selectors/entities/teams';
-import {getCurrentUser} from 'mattermost-redux/selectors/entities/users';
+import {getTeams, addUserToTeam, joinTeam} from 'bulletin-redux/actions/teams';
+import {logout} from 'bulletin-redux/actions/users';
+import {getTheme} from 'bulletin-redux/selectors/entities/preferences';
+import {getJoinableTeams} from 'bulletin-redux/selectors/entities/teams';
+import {getCurrentUser} from 'bulletin-redux/selectors/entities/users';
 
 import {handleTeamChange} from 'app/actions/views/select_team';
 import {isLandscape} from 'app/selectors/device';

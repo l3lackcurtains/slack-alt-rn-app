@@ -4,16 +4,16 @@
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 
-import {isMinimumServerVersion} from 'mattermost-redux/utils/helpers';
-import {General, Permissions} from 'mattermost-redux/constants';
-import {createPost} from 'mattermost-redux/actions/posts';
-import {setStatus} from 'mattermost-redux/actions/users';
-import {getCurrentChannel, isCurrentChannelReadOnly, getCurrentChannelStats} from 'mattermost-redux/selectors/entities/channels';
-import {haveIChannelPermission} from 'mattermost-redux/selectors/entities/roles';
-import {canUploadFilesOnMobile, getConfig} from 'mattermost-redux/selectors/entities/general';
-import {getTheme} from 'mattermost-redux/selectors/entities/preferences';
-import {getCurrentUserId, getStatusForUserId} from 'mattermost-redux/selectors/entities/users';
-import {getChannelTimezones} from 'mattermost-redux/actions/channels';
+import {isMinimumServerVersion} from 'bulletin-redux/utils/helpers';
+import {General, Permissions} from 'bulletin-redux/constants';
+import {createPost} from 'bulletin-redux/actions/posts';
+import {setStatus} from 'bulletin-redux/actions/users';
+import {getCurrentChannel, isCurrentChannelReadOnly, getCurrentChannelStats} from 'bulletin-redux/selectors/entities/channels';
+import {haveIChannelPermission} from 'bulletin-redux/selectors/entities/roles';
+import {canUploadFilesOnMobile, getConfig} from 'bulletin-redux/selectors/entities/general';
+import {getTheme} from 'bulletin-redux/selectors/entities/preferences';
+import {getCurrentUserId, getStatusForUserId} from 'bulletin-redux/selectors/entities/users';
+import {getChannelTimezones} from 'bulletin-redux/actions/channels';
 
 import {executeCommand} from 'app/actions/views/command';
 import {addReactionToLatestPost} from 'app/actions/views/emoji';

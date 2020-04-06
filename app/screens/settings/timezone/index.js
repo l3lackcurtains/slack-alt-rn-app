@@ -4,11 +4,11 @@
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
-import {getSupportedTimezones} from 'mattermost-redux/actions/general';
-import {getSupportedTimezones as getTimezones} from 'mattermost-redux/selectors/entities/general';
-import {getTheme} from 'mattermost-redux/selectors/entities/preferences';
-import {getUserTimezone} from 'mattermost-redux/selectors/entities/timezone';
-import {getCurrentUser} from 'mattermost-redux/selectors/entities/users';
+import {getSupportedTimezones} from 'bulletin-redux/actions/general';
+import {getSupportedTimezones as getTimezones} from 'bulletin-redux/selectors/entities/general';
+import {getTheme} from 'bulletin-redux/selectors/entities/preferences';
+import {getUserTimezone} from 'bulletin-redux/selectors/entities/timezone';
+import {getCurrentUser} from 'bulletin-redux/selectors/entities/users';
 import {isLandscape} from 'app/selectors/device';
 import {updateUser} from 'app/actions/views/edit_profile';
 

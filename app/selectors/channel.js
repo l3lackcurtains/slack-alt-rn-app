@@ -3,9 +3,9 @@
 
 import {createSelector} from 'reselect';
 
-import {getCurrentUserId, getUser} from 'mattermost-redux/selectors/entities/users';
-import {getChannelByName} from 'mattermost-redux/selectors/entities/channels';
-import {getTeamByName} from 'mattermost-redux/selectors/entities/teams';
+import {getCurrentUserId, getUser} from 'bulletin-redux/selectors/entities/users';
+import {getChannelByName} from 'bulletin-redux/selectors/entities/channels';
+import {getTeamByName} from 'bulletin-redux/selectors/entities/teams';
 
 const getOtherUserIdForDm = createSelector(
     (state, channel) => channel,

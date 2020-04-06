@@ -6,8 +6,8 @@ import PropTypes from 'prop-types';
 import {IntlProvider} from 'react-intl';
 import {Platform} from 'react-native';
 
-import {Client4} from 'mattermost-redux/client';
-import EventEmitter from 'mattermost-redux/utils/event_emitter';
+import {Client4} from 'bulletin-redux/client';
+import EventEmitter from 'bulletin-redux/utils/event_emitter';
 
 import {resetToTeams} from 'app/actions/navigation';
 import {NavigationTypes} from 'app/constants';

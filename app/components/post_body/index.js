@@ -3,23 +3,23 @@
 
 import {connect} from 'react-redux';
 
-import {General, Posts} from 'mattermost-redux/constants';
-import {getChannel, canManageChannelMembers, getCurrentChannelId} from 'mattermost-redux/selectors/entities/channels';
-import {getTheme} from 'mattermost-redux/selectors/entities/preferences';
-import {getConfig, getLicense} from 'mattermost-redux/selectors/entities/general';
-import {getCurrentUserId, getCurrentUserRoles} from 'mattermost-redux/selectors/entities/users';
-import {getCurrentTeamId} from 'mattermost-redux/selectors/entities/teams';
-import {getCustomEmojisByName} from 'mattermost-redux/selectors/entities/emojis';
-import {makeGetReactionsForPost} from 'mattermost-redux/selectors/entities/posts';
-import {memoizeResult} from 'mattermost-redux/utils/helpers';
+import {General, Posts} from 'bulletin-redux/constants';
+import {getChannel, canManageChannelMembers, getCurrentChannelId} from 'bulletin-redux/selectors/entities/channels';
+import {getTheme} from 'bulletin-redux/selectors/entities/preferences';
+import {getConfig, getLicense} from 'bulletin-redux/selectors/entities/general';
+import {getCurrentUserId, getCurrentUserRoles} from 'bulletin-redux/selectors/entities/users';
+import {getCurrentTeamId} from 'bulletin-redux/selectors/entities/teams';
+import {getCustomEmojisByName} from 'bulletin-redux/selectors/entities/emojis';
+import {makeGetReactionsForPost} from 'bulletin-redux/selectors/entities/posts';
+import {memoizeResult} from 'bulletin-redux/utils/helpers';
 
 import {
     isEdited,
     isPostEphemeral,
     isSystemMessage,
     canDeletePost,
-} from 'mattermost-redux/utils/post_utils';
-import {isAdmin as checkIsAdmin, isSystemAdmin as checkIsSystemAdmin} from 'mattermost-redux/utils/user_utils';
+} from 'bulletin-redux/utils/post_utils';
+import {isAdmin as checkIsAdmin, isSystemAdmin as checkIsSystemAdmin} from 'bulletin-redux/utils/user_utils';
 
 import {getDimensions} from 'app/selectors/device';
 

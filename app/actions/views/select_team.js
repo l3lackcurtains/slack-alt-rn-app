@@ -3,11 +3,11 @@
 
 import {batchActions} from 'redux-batched-actions';
 
-import {ChannelTypes, TeamTypes} from 'mattermost-redux/action_types';
-import {getMyTeams} from 'mattermost-redux/actions/teams';
-import {RequestStatus} from 'mattermost-redux/constants';
-import {getConfig} from 'mattermost-redux/selectors/entities/general';
-import EventEmitter from 'mattermost-redux/utils/event_emitter';
+import {ChannelTypes, TeamTypes} from 'bulletin-redux/action_types';
+import {getMyTeams} from 'bulletin-redux/actions/teams';
+import {RequestStatus} from 'bulletin-redux/constants';
+import {getConfig} from 'bulletin-redux/selectors/entities/general';
+import EventEmitter from 'bulletin-redux/utils/event_emitter';
 
 import {NavigationTypes} from 'app/constants';
 import {selectFirstAvailableTeam} from 'app/utils/teams';

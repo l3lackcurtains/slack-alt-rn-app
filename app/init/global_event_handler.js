@@ -9,16 +9,16 @@ import RNFetchBlob from 'rn-fetch-blob';
 import {batchActions} from 'redux-batched-actions';
 import semver from 'semver/preload';
 
-import {setAppState, setServerVersion} from 'mattermost-redux/actions/general';
-import {autoUpdateTimezone} from 'mattermost-redux/actions/timezone';
-import {close as closeWebSocket} from 'mattermost-redux/actions/websocket';
-import {GeneralTypes} from 'mattermost-redux/action_types';
-import {Client4} from 'mattermost-redux/client';
-import {General} from 'mattermost-redux/constants';
-import EventEmitter from 'mattermost-redux/utils/event_emitter';
-import {getCurrentChannelId} from 'mattermost-redux/selectors/entities/channels';
-import {getCurrentUserId, getUser} from 'mattermost-redux/selectors/entities/users';
-import {isTimezoneEnabled} from 'mattermost-redux/selectors/entities/timezone';
+import {setAppState, setServerVersion} from 'bulletin-redux/actions/general';
+import {autoUpdateTimezone} from 'bulletin-redux/actions/timezone';
+import {close as closeWebSocket} from 'bulletin-redux/actions/websocket';
+import {GeneralTypes} from 'bulletin-redux/action_types';
+import {Client4} from 'bulletin-redux/client';
+import {General} from 'bulletin-redux/constants';
+import EventEmitter from 'bulletin-redux/utils/event_emitter';
+import {getCurrentChannelId} from 'bulletin-redux/selectors/entities/channels';
+import {getCurrentUserId, getUser} from 'bulletin-redux/selectors/entities/users';
+import {isTimezoneEnabled} from 'bulletin-redux/selectors/entities/timezone';
 
 import {setDeviceDimensions, setDeviceOrientation, setDeviceAsTablet, setStatusBarHeight} from 'app/actions/device';
 import {selectDefaultChannel} from 'app/actions/views/channel';

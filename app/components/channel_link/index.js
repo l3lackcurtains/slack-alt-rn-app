@@ -5,10 +5,10 @@ import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import {createSelector} from 'reselect';
 
-import {joinChannel} from 'mattermost-redux/actions/channels';
-import {getChannelsNameMapInCurrentTeam} from 'mattermost-redux/selectors/entities/channels';
-import {getCurrentTeamId} from 'mattermost-redux/selectors/entities/teams';
-import {getCurrentUserId} from 'mattermost-redux/selectors/entities/users';
+import {joinChannel} from 'bulletin-redux/actions/channels';
+import {getChannelsNameMapInCurrentTeam} from 'bulletin-redux/selectors/entities/channels';
+import {getCurrentTeamId} from 'bulletin-redux/selectors/entities/teams';
+import {getCurrentUserId} from 'bulletin-redux/selectors/entities/users';
 
 import {handleSelectChannel} from 'app/actions/views/channel';
 

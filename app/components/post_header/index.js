@@ -3,15 +3,15 @@
 
 import {connect} from 'react-redux';
 
-import {Preferences} from 'mattermost-redux/constants';
-import {makeGetCommentCountForPost} from 'mattermost-redux/selectors/entities/posts';
-import {getBool, getTeammateNameDisplaySetting, getTheme} from 'mattermost-redux/selectors/entities/preferences';
-import {isTimezoneEnabled} from 'mattermost-redux/selectors/entities/timezone';
-import {getUser, getCurrentUser} from 'mattermost-redux/selectors/entities/users';
-import {isPostPendingOrFailed, isSystemMessage} from 'mattermost-redux/utils/post_utils';
-import {getUserCurrentTimezone} from 'mattermost-redux/utils/timezone_utils';
-import {displayUsername} from 'mattermost-redux/utils/user_utils';
-import {getConfig} from 'mattermost-redux/selectors/entities/general';
+import {Preferences} from 'bulletin-redux/constants';
+import {makeGetCommentCountForPost} from 'bulletin-redux/selectors/entities/posts';
+import {getBool, getTeammateNameDisplaySetting, getTheme} from 'bulletin-redux/selectors/entities/preferences';
+import {isTimezoneEnabled} from 'bulletin-redux/selectors/entities/timezone';
+import {getUser, getCurrentUser} from 'bulletin-redux/selectors/entities/users';
+import {isPostPendingOrFailed, isSystemMessage} from 'bulletin-redux/utils/post_utils';
+import {getUserCurrentTimezone} from 'bulletin-redux/utils/timezone_utils';
+import {displayUsername} from 'bulletin-redux/utils/user_utils';
+import {getConfig} from 'bulletin-redux/selectors/entities/general';
 
 import {fromAutoResponder} from 'app/utils/general';
 import {isGuest} from 'app/utils/users';

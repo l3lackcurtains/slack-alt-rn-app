@@ -2,7 +2,7 @@
 // See LICENSE.txt for license information.
 
 import { mergeNavigationOptions } from 'app/actions/navigation';
-import * as ThemeUtils from 'mattermost-redux/utils/theme_utils';
+import * as ThemeUtils from 'bulletin-redux/utils/theme_utils';
 import { StyleSheet } from 'react-native';
 import tinyColor from 'tinycolor2';
 
